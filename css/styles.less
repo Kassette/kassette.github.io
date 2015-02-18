@@ -1,0 +1,524 @@
+@import "../stylesheets/bootstrap.less";
+@import "../stylesheets/mixins/gradients.less";
+
+@dark-blue-primary: #2c4567;
+@dark-blue-secondary: #3f6291;
+
+@navbar-margin-bottom: 0px;
+@navbar-padding-bottom: 0px;
+@github-color: #4183c4;
+@linkedin-color: #3f97c6;
+
+@primary-font-name: 'Quicksand';
+@primary-font-regular: ~'@{primary-font-name}-regular';
+@primary-font-bold: ~'@{primary-font-name}-bold';
+@primary-font-italic: ~'@{primary-font-name}-italic';
+@font-family-base: @primary-font-regular;
+
+@font-size-base: 12px;
+
+
+.undecorated {
+  text-decoration: none !important;
+  color: inherit !important; 
+}
+
+.label {
+  margin: 10px;
+  padding: 8px;
+  display: inline-block;
+}
+
+.arrow-down {
+  background: url('../images/triangle.png') center center;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 15px;
+  position: absolute;
+  top: 95%;
+  background-size: 15px 10px;
+  right: 30%;
+}
+
+.info {
+  display: none;
+  font-size: 1.3em;
+  position: absolute;
+  top: -40px;
+  height: 35px;
+  width: auto;
+  border-radius: 10px;
+  right: 25%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.progress.hover > .info {
+  display: block;
+}
+
+.label-primary-color {
+  background-color: @dark-blue-secondary;
+  cursor: pointer;
+}
+.label-primary-color:hover {
+  background-color: @dark-blue-primary;
+}
+
+.my-bar {
+  border-right: 1px solid white;
+}
+.empty-bar {
+  border-right: 1px solid white;
+  box-shadow: none;
+  background: inherit !important;
+}
+
+
+.sticker-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -ms-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d; 
+  -ms-transform-style: preserve-3d; 
+}
+
+.sticker-container.hover .sticker-back {
+  .rotateY(0deg);
+}
+
+.sticker-container.hover .sticker-front {
+  .rotateY(180deg);
+}
+
+
+.sticker-container, .sticker-front, .sticker-back {
+  width: 100%;
+  height: 350px;
+  max-width: 350px;
+  border-radius: 1000px;
+}
+
+.sticker {
+  .transition(0.6s);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+.sticker-front, .sticker-back {
+  .backface-visibility(hidden);
+
+  .transition(0.6s);
+  .rotateY(0deg);
+  
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transform-style: preserve-3d;
+
+  -o-transform-style: preserve-3d;
+
+  -ms-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sticker-front {
+  .rotateY(0deg);
+  z-index: 2;
+}
+
+.sticker-back {
+  .rotateY(-180deg);
+}
+
+
+.sticker-img {
+  width: 100%;
+  position: absolute;
+  border-radius: 1000px;
+ }
+
+.project {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
+.affix {
+  position: fixed;
+  display: block !important;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+  background: url(../images/pattern-1.png), @dark-blue-primary;
+  border-bottom: 1px solid gray !Important;
+  .transition(all 0.5s);
+}
+
+.dark-special-bg {
+  background: url(../images/pattern-1.png), @dark-blue-primary;
+}
+
+
+.project:focus, .project:hover {
+  background: url(../images/pattern-1.png), @dark-blue-primary;
+  .box-shadow(inset 0 5px 8px black);
+  .transition(all 0.3s linear);
+  border-radius: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.transparent-bg *::selection {
+  color: @dark-blue-primary;
+  background: white;
+}
+
+span.tab {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.white-bg *::selection {
+  background: @dark-blue-primary;
+  color: white;
+}
+.justify {
+  text-align: justify;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+
+.special-bg {
+  background: url(../images/pattern-6.png), @dark-blue-secondary;
+}
+
+.fixed-bg {
+  background-repeat: repeat;
+  position: fixed;
+  width: 100%;
+  height: 10000px;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+
+.content {
+  position: relative;
+}
+.vtop {
+ vertical-align: top;
+}
+
+.vbottom {
+  vertical-align: bottom !important;
+}
+
+.italic-text {
+  font-family: @primary-font-italic;
+}
+
+.reflect-horizontal {
+  .scaleX(-1);
+}
+
+span.quote {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+  background-image: url('../images/quote.png')
+}
+
+
+
+
+.top-heading-white {
+  margin: 0 auto;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+}
+
+h1 {
+  font-family: @primary-font-bold;
+  font-weight: bold;
+}
+
+.primary-color-text {
+  color: @dark-blue-primary;
+}
+
+.secondary-color-text {
+  color: @dark-blue-primary;
+}
+.white-text {
+  color: white;
+}
+
+.lighter-text {
+  color: lighten(silver, 5%)
+}
+
+@font-face {
+  font-family: @primary-font-regular;
+  font-style: normal;
+  src: url(~'../fonts/@{primary-font-name}-Regular.otf');
+}
+
+@font-face {
+  font-family: @primary-font-bold;
+  font-style: bold;
+  src: url(~'../fonts/@{primary-font-name}-Bold.otf');
+}
+
+@font-face {
+  font-family: @primary-font-italic;
+  font-style: bold;
+  src: url(~'../fonts/@{primary-font-name}-Italic.otf');
+}
+
+.footer-notice {
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  color: white;
+}
+
+.divider-horizontal-sm {
+  height: 25px;
+}
+.divider-horizontal-md {
+  height: 50px;
+}
+
+.divider-horizontal-lg {
+  height: 100px;
+}
+.border-white-lg {
+  border: 10px solid white;
+}
+
+.border-white-sm {
+  border: 2px solid white;
+}
+
+.shadow-black-sm {
+  .box-shadow(0px 2px 5px black);
+}
+
+.shadow-black-md {
+ .box-shadow(0px 2px 5px black);
+}
+
+.radius-sm {
+  border-radius: 5px;
+}
+
+.vcenter {
+  float: none !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.el-center {
+  margin: 0 auto !important;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.text-size-lg-er {
+  font-size: 2em;
+}
+
+.text-size-lg {
+  font-size: 1.6em;
+}
+
+.text-size-md {
+  font-size: 1.28em;
+}
+
+.vertical-text-spacing {
+  line-height: 1.8;
+}
+
+
+/* Navbar begin */
+
+.icon-bar {
+  background: white;
+}
+
+.navbar-toggle {
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-toggle:hover {
+  background-color: white;
+}
+
+
+.navbar-toggle:hover > .navbar-toggle-bar {
+  background-color: @dark-blue-primary;
+}
+
+.navbar-custom {
+  z-index: 10;
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+}
+
+.navbar-nav > li {
+  text-align: center;
+}
+
+
+.navbar-nav > li > a {
+  font-size: 1.28em;
+  color: white;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .transition(all 0.5s);
+  
+}
+
+.navbar-nav > li > a::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: silver;
+  height: 2px;
+  .transition(all 0.5s);
+  width: 90%;
+  left: 5%;
+  top: 150%;
+  opacity: 0;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: silver;
+}
+
+.navbar-nav > li > a:hover::after {
+  opacity: 1; 
+  content: '';
+  display: block;
+  background-color: white;
+  top: 110%;
+}
+
+/* Navbar end */
+
+
+.quote-color-text {
+  color: gray;
+}
+
+.input-lg-er {
+  font-size: 1.9em;
+  height: 60px;
+}
+
+
+.vpadding-sm {
+  margin-bottom: 10px;
+}
+
+
+.vpadding-md {
+  margin-bottom: 30px;
+}
+
+
+.btn-custom {
+  width: 100%;
+  .button-variant(white; @dark-blue-primary; @dark-blue-secondary);
+}
+
+
+.btn-custom:active {
+  background-color: @dark-blue-secondary;
+  color: white;
+}
+
+.ruler-style-blue {
+  background-color: @dark-blue-primary;
+}
+
+
+.btn-custom:hover {
+  color: silver;
+}
+
+.btn-github {
+  background: @github-color;
+}
+.btn-github:hover {
+  background: darken(@github-color,10%);
+}
+
+.btn-linkededin {
+  background: @linkedin-color;
+}
+
+.btn-linkededin:hover {
+  background-color: darken(@linkedin-color,10%)
+}
+
+
+.btn-mail {
+  background-color: #1395c2;
+}
+
+.btn-mail:hover {
+  background-color: darken(#1395c2,5%); 
+}
