@@ -1,9 +1,9 @@
 @import "../stylesheets/bootstrap.less";
 @import "../stylesheets/mixins/gradients.less";
 
-@dark-blue-primary: #2c4567;
-@dark-blue-secondary: #3f6291;
-
+@dark-blue-primary: #2980b9;
+@dark-blue-secondary: #2980b9;
+@kasette-outline-color: white;
 @navbar-margin-bottom: 0px;
 @navbar-padding-bottom: 0px;
 @github-color: #4183c4;
@@ -76,83 +76,7 @@
 }
 
 
-.sticker-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  perspective: 1000;
-  -ms-transform: perspective(1000px);
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d; 
-  -ms-transform-style: preserve-3d; 
-}
-
-.sticker-container.hover .sticker-back {
-  .rotateY(0deg);
-}
-
-.sticker-container.hover .sticker-front {
-  .rotateY(180deg);
-}
-
-
-.sticker-container, .sticker-front, .sticker-back {
-  width: 100%;
-  height: 350px;
-  max-width: 350px;
-  border-radius: 1000px;
-}
-
-.sticker {
-  .transition(0.6s);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-
-  transform-style: preserve-3d;
-
-  position: relative;
-}
-
-.sticker-front, .sticker-back {
-  .backface-visibility(hidden);
-
-  .transition(0.6s);
-  .rotateY(0deg);
-  
-  -webkit-transform-style: preserve-3d;
-
-  -moz-transform-style: preserve-3d;
-
-  -o-transform-style: preserve-3d;
-
-  -ms-transform-style: preserve-3d;
-
-  transform-style: preserve-3d;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.sticker-front {
-  .rotateY(0deg);
-  z-index: 2;
-}
-
-.sticker-back {
-  .rotateY(-180deg);
-}
-
-
-.sticker-img {
-  width: 100%;
-  position: absolute;
-  border-radius: 1000px;
- }
-
-.project {
+.Team {
   padding-top: 40px;
   padding-bottom: 60px;
 }
@@ -164,18 +88,18 @@
   top: 0;
   z-index: 1030;
   width: 100%;
-  background: url(../images/pattern-1.png), @dark-blue-primary;
+  background: url(../images/pattern-2.png), @dark-blue-primary;
   border-bottom: 1px solid gray !Important;
   .transition(all 0.5s);
 }
 
 .dark-special-bg {
-  background: url(../images/pattern-1.png), @dark-blue-primary;
+  background: url(../images/pattern-2.png), @dark-blue-primary;
 }
 
 
-.project:focus, .project:hover {
-  background: url(../images/pattern-1.png), @dark-blue-primary;
+.Team:focus, .Team:hover {
+  background: url(../images/pattern-2.png), @dark-blue-primary;
   .box-shadow(inset 0 5px 8px black);
   .transition(all 0.3s linear);
   border-radius: 0px;
@@ -218,7 +142,7 @@ span.tab {
 
 
 .special-bg {
-  background: url(../images/pattern-6.png), @dark-blue-secondary;
+  background: url(../images/pattern-3.png), @dark-blue-secondary;
 }
 
 .fixed-bg {
@@ -521,4 +445,173 @@ h1 {
 
 .btn-mail:hover {
   background-color: darken(#1395c2,5%); 
+}
+
+
+
+svg {
+  width: 100%;
+}
+
+
+.traceable-path {
+  fill-color: transparent;
+  fill-opacity: 1;
+  stroke: @kasette-outline-color;
+  stroke-width: 1;
+}
+
+circle.circle_spinning {
+  stroke-width: 2;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+}
+
+circle.circle_spinning_left {
+  -webkit-transform: translateX(150px) translateY(200px);
+  -webkit-animation: drawSpinningCircleLeft 6s infinite linear, appear 1.5s linear;
+}
+
+
+circle.circle_spinning_right {
+  -webkit-transform: translateX(400px) translateY(200px);
+  -webkit-animation: drawSpinningCircleRight 6s infinite linear, appear 1.5s linear;
+}
+
+
+
+@-webkit-keyframes drawSpinningCircleLeft {
+  from {
+    -webkit-transform: translateX(150px) translateY(200px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateX(150px) translateY(200px) rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes drawSpinningCircleRight {
+  from {
+    -webkit-transform: translateX(400px) translateY(200px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateX(400px) translateY(200px) rotate(360deg);
+  }
+}
+
+path.border {
+  stroke-dasharray: 847;
+  stroke-dashoffset: 0;
+  -webkit-animation: draw 1.5s;
+}
+
+path.line {
+  stroke-dasharray: 410;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawLine 1.5s;
+}
+
+path.top_frame {
+  stroke-dasharray: 517;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawTopFrame 1.5s;
+}
+
+
+@-webkit-keyframes appear {
+  from {
+    stroke-dasharray: 3;
+  }
+  to {
+    stroke-dasharray: 10;
+  }
+}
+
+
+
+
+
+@-webkit-keyframes drawLine {
+  from {
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+path.bottom_frame {
+  stroke-dasharray: 776;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawBottomFrame 1.5s;
+}
+
+@-webkit-keyframes drawBottomFrame {
+  from {
+    stroke-dasharray: 776;
+    stroke-dashoffset: 776;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+@-webkit-keyframes drawTopFrame {
+  from {
+    stroke-dasharray: 517;
+    stroke-dashoffset: 517;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes draw {
+  from {
+    stroke-dasharray: 847;
+    stroke-dashoffset: 847;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+path.circle {
+  stroke-dasharray: 125;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawCircle 1.5s;
+}
+
+
+path.small_circle {
+  stroke-dasharray: 31;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawSmallCircle 1.5s;
+}
+
+
+
+@-webkit-keyframes drawSmallCircle {
+  from {
+    stroke-dasharray: 31;
+    stroke-dashoffset: 31;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@-webkit-keyframes drawCircle {
+  from {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

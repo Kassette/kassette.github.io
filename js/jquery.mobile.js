@@ -1522,7 +1522,7 @@ $.mobile.widget = $.Widget;
 
 /*!
  * jQuery hashchange event - v1.3 - 7/21/2010
- * http://benalman.com/projects/jquery-hashchange-plugin/
+ * http://benalman.com/Teams/jquery-hashchange-plugin/
  * 
  * Copyright (c) 2010 "Cowboy" Ben Alman
  * Dual licensed under the MIT and GPL licenses.
@@ -1533,7 +1533,7 @@ $.mobile.widget = $.Widget;
 //
 // *Version: 1.3, Last updated: 7/21/2010*
 // 
-// Project Home - http://benalman.com/projects/jquery-hashchange-plugin/
+// Team Home - http://benalman.com/Teams/jquery-hashchange-plugin/
 // GitHub       - http://github.com/cowboy/jquery-hashchange/
 // Source       - http://github.com/cowboy/jquery-hashchange/raw/master/jquery.ba-hashchange.js
 // (Minified)   - http://github.com/cowboy/jquery-hashchange/raw/master/jquery.ba-hashchange.min.js (0.8kb gzipped)
@@ -1549,8 +1549,8 @@ $.mobile.widget = $.Widget;
 // These working examples, complete with fully commented code, illustrate a few
 // ways in which this plugin can be used.
 // 
-// hashchange event - http://benalman.com/code/projects/jquery-hashchange/examples/hashchange/
-// document.domain - http://benalman.com/code/projects/jquery-hashchange/examples/document_domain/
+// hashchange event - http://benalman.com/code/Teams/jquery-hashchange/examples/hashchange/
+// document.domain - http://benalman.com/code/Teams/jquery-hashchange/examples/document_domain/
 // 
 // About: Support and Testing
 // 
@@ -1561,7 +1561,7 @@ $.mobile.widget = $.Widget;
 // jQuery Versions - 1.2.6, 1.3.2, 1.4.1, 1.4.2
 // Browsers Tested - Internet Explorer 6-8, Firefox 2-4, Chrome 5-6, Safari 3.2-5,
 //                   Opera 9.6-10.60, iPhone 3.1, Android 1.6-2.2, BlackBerry 4.6-5.
-// Unit Tests      - http://benalman.com/code/projects/jquery-hashchange/unit/
+// Unit Tests      - http://benalman.com/code/Teams/jquery-hashchange/unit/
 // 
 // About: Known issues
 // 
@@ -1571,10 +1571,10 @@ $.mobile.widget = $.Widget;
 // window.onhashchange abstraction. See the following examples for more
 // information:
 // 
-// Chrome: Back Button - http://benalman.com/code/projects/jquery-hashchange/examples/bug-chrome-back-button/
-// Firefox: Remote XMLHttpRequest - http://benalman.com/code/projects/jquery-hashchange/examples/bug-firefox-remote-xhr/
-// WebKit: Back Button in an Iframe - http://benalman.com/code/projects/jquery-hashchange/examples/bug-webkit-hash-iframe/
-// Safari: Back Button from a different domain - http://benalman.com/code/projects/jquery-hashchange/examples/bug-safari-back-from-diff-domain/
+// Chrome: Back Button - http://benalman.com/code/Teams/jquery-hashchange/examples/bug-chrome-back-button/
+// Firefox: Remote XMLHttpRequest - http://benalman.com/code/Teams/jquery-hashchange/examples/bug-firefox-remote-xhr/
+// WebKit: Back Button in an Iframe - http://benalman.com/code/Teams/jquery-hashchange/examples/bug-webkit-hash-iframe/
+// Safari: Back Button from a different domain - http://benalman.com/code/Teams/jquery-hashchange/examples/bug-safari-back-from-diff-domain/
 // 
 // Also note that should a browser natively support the window.onhashchange 
 // event, but not report that it does, the fallback polling loop will be used.
@@ -12752,7 +12752,7 @@ $.widget( "mobile.controlgroup", $.extend( {
 			this.element.closest( ".ui-page" ).addClass( "ui-android-2x-fixed" );
 		},
 		//this addresses issues #4337 Fixed header problem after scrolling content on iOS and Android
-		//and device bugs project issue #1 Form elements can lose click hit area in position: fixed containers.
+		//and device bugs Team issue #1 Form elements can lose click hit area in position: fixed containers.
 		//this also addresses not on fixed toolbars page in docs
 		//adding 1px of padding to the bottom then removing it causes a "redraw"
 		//which positions the toolbars correctly (they will always be visually correct)

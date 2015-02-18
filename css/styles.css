@@ -6199,11 +6199,11 @@ button.close {
   display: block;
 }
 .label-primary-color {
-  background-color: #3f6291;
+  background-color: #2980b9;
   cursor: pointer;
 }
 .label-primary-color:hover {
-  background-color: #2c4567;
+  background-color: #2980b9;
 }
 .my-bar {
   border-right: 1px solid white;
@@ -6213,87 +6213,7 @@ button.close {
   box-shadow: none;
   background: inherit !important;
 }
-.sticker-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  perspective: 1000;
-  -ms-transform: perspective(1000px);
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-}
-.sticker-container.hover .sticker-back {
-  -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-.sticker-container.hover .sticker-front {
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-.sticker-container,
-.sticker-front,
-.sticker-back {
-  width: 100%;
-  height: 350px;
-  max-width: 350px;
-  border-radius: 1000px;
-}
-.sticker {
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-}
-.sticker-front,
-.sticker-back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.sticker-front {
-  -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  z-index: 2;
-}
-.sticker-back {
-  -webkit-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  -o-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-.sticker-img {
-  width: 100%;
-  position: absolute;
-  border-radius: 1000px;
-}
-.project {
+.Team {
   padding-top: 40px;
   padding-bottom: 60px;
 }
@@ -6303,18 +6223,18 @@ button.close {
   top: 0;
   z-index: 1030;
   width: 100%;
-  background: url(../images/pattern-1.png), #2c4567;
+  background: url(../images/pattern-2.png), #2980b9;
   border-bottom: 1px solid gray !Important;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .dark-special-bg {
-  background: url(../images/pattern-1.png), #2c4567;
+  background: url(../images/pattern-2.png), #2980b9;
 }
-.project:focus,
-.project:hover {
-  background: url(../images/pattern-1.png), #2c4567;
+.Team:focus,
+.Team:hover {
+  background: url(../images/pattern-2.png), #2980b9;
   -webkit-box-shadow: inset 0 5px 8px #000000;
   box-shadow: inset 0 5px 8px #000000;
   -webkit-transition: all 0.3s linear;
@@ -6326,7 +6246,7 @@ button.close {
   padding: 0px;
 }
 .transparent-bg *::selection {
-  color: #2c4567;
+  color: #2980b9;
   background: white;
 }
 span.tab {
@@ -6337,7 +6257,7 @@ span.tab {
   margin-bottom: 0px;
 }
 .white-bg *::selection {
-  background: #2c4567;
+  background: #2980b9;
   color: white;
 }
 .justify {
@@ -6351,7 +6271,7 @@ span.tab {
   background-color: white;
 }
 .special-bg {
-  background: url(../images/pattern-6.png), #3f6291;
+  background: url(../images/pattern-3.png), #2980b9;
 }
 .fixed-bg {
   background-repeat: repeat;
@@ -6402,10 +6322,10 @@ h1 {
   font-weight: bold;
 }
 .primary-color-text {
-  color: #2c4567;
+  color: #2980b9;
 }
 .secondary-color-text {
-  color: #2c4567;
+  color: #2980b9;
 }
 .white-text {
   color: white;
@@ -6500,7 +6420,7 @@ h1 {
   background-color: white;
 }
 .navbar-toggle:hover > .navbar-toggle-bar {
-  background-color: #2c4567;
+  background-color: #2980b9;
 }
 .navbar-custom {
   z-index: 10;
@@ -6566,8 +6486,8 @@ h1 {
 .btn-custom {
   width: 100%;
   color: #ffffff;
-  background-color: #2c4567;
-  border-color: #3f6291;
+  background-color: #2980b9;
+  border-color: #2980b9;
 }
 .btn-custom:hover,
 .btn-custom:focus,
@@ -6575,8 +6495,8 @@ h1 {
 .btn-custom.active,
 .open > .dropdown-toggle.btn-custom {
   color: #ffffff;
-  background-color: #1d2d43;
-  border-color: #2c4566;
+  background-color: #20638f;
+  border-color: #1e5d87;
 }
 .btn-custom:active,
 .btn-custom.active,
@@ -6598,19 +6518,19 @@ fieldset[disabled] .btn-custom:active,
 .btn-custom.disabled.active,
 .btn-custom[disabled].active,
 fieldset[disabled] .btn-custom.active {
-  background-color: #2c4567;
-  border-color: #3f6291;
+  background-color: #2980b9;
+  border-color: #2980b9;
 }
 .btn-custom .badge {
-  color: #2c4567;
+  color: #2980b9;
   background-color: #ffffff;
 }
 .btn-custom:active {
-  background-color: #3f6291;
+  background-color: #2980b9;
   color: white;
 }
 .ruler-style-blue {
-  background-color: #2c4567;
+  background-color: #2980b9;
 }
 .btn-custom:hover {
   color: silver;
@@ -6632,4 +6552,134 @@ fieldset[disabled] .btn-custom.active {
 }
 .btn-mail:hover {
   background-color: #1183ab;
+}
+svg {
+  width: 100%;
+}
+.traceable-path {
+  fill-color: transparent;
+  fill-opacity: 1;
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+circle.circle_spinning {
+  stroke-width: 2;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+}
+circle.circle_spinning_left {
+  -webkit-transform: translateX(150px) translateY(200px);
+  -webkit-animation: drawSpinningCircleLeft 6s infinite linear, appear 1.5s linear;
+}
+circle.circle_spinning_right {
+  -webkit-transform: translateX(400px) translateY(200px);
+  -webkit-animation: drawSpinningCircleRight 6s infinite linear, appear 1.5s linear;
+}
+@-webkit-keyframes drawSpinningCircleLeft {
+  from {
+    -webkit-transform: translateX(150px) translateY(200px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateX(150px) translateY(200px) rotate(360deg);
+  }
+}
+@-webkit-keyframes drawSpinningCircleRight {
+  from {
+    -webkit-transform: translateX(400px) translateY(200px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateX(400px) translateY(200px) rotate(360deg);
+  }
+}
+path.border {
+  stroke-dasharray: 847;
+  stroke-dashoffset: 0;
+  -webkit-animation: draw 1.5s;
+}
+path.line {
+  stroke-dasharray: 410;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawLine 1.5s;
+}
+path.top_frame {
+  stroke-dasharray: 517;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawTopFrame 1.5s;
+}
+@-webkit-keyframes appear {
+  from {
+    stroke-dasharray: 3;
+  }
+  to {
+    stroke-dasharray: 10;
+  }
+}
+@-webkit-keyframes drawLine {
+  from {
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+path.bottom_frame {
+  stroke-dasharray: 776;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawBottomFrame 1.5s;
+}
+@-webkit-keyframes drawBottomFrame {
+  from {
+    stroke-dasharray: 776;
+    stroke-dashoffset: 776;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawTopFrame {
+  from {
+    stroke-dasharray: 517;
+    stroke-dashoffset: 517;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw {
+  from {
+    stroke-dasharray: 847;
+    stroke-dashoffset: 847;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+path.circle {
+  stroke-dasharray: 125;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawCircle 1.5s;
+}
+path.small_circle {
+  stroke-dasharray: 31;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawSmallCircle 1.5s;
+}
+@-webkit-keyframes drawSmallCircle {
+  from {
+    stroke-dasharray: 31;
+    stroke-dashoffset: 31;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawCircle {
+  from {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
