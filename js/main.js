@@ -1,4 +1,5 @@
 $(function() {
+  $(kassette_logo).fadeIn(1500);
   // Smooth scrolling
   $('a[href*=#]:not([href=#])').click(function(item) {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -17,19 +18,6 @@ $(function() {
   var hoverOrTouch = (('ontouchend' in window)) ? 'tap' : 'mouseenter mouseleave';
 
 
-  $('#bs-navbar-collapse').find('a').click(function() {
-    $(this).closest(".dropdown-menu").prev().dropdown("toggle");
-  });
-
-  $('#sticker').on(hoverOrTouch,function() { $(this).toggleClass('hover')});
-  $('.progress').on(hoverOrTouch,function() { 
-    $('.progress.hover').removeClass('hover');
-    $(this).toggleClass('hover')
-  });
-  // navbarAffix();
-  // $(window).resize(function(){ 
-  //   navbarAffix();
-  // });
 
   
 
@@ -37,16 +25,6 @@ $(function() {
 
 
 
-
-
-function navbarAffix() {
-  var affix_offset = $('#jumbotron-top').height()  + $('#top-navbar-fixed').height();
-  $('#top-navbar-fixed').affix({
-    offset: {
-      top: affix_offset
-    }
-  });
-}
 
 
 function send_email(item) {

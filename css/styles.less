@@ -1,9 +1,9 @@
 @import "../stylesheets/bootstrap.less";
 @import "../stylesheets/mixins/gradients.less";
 
-@dark-blue-primary: #2980b9;
-@dark-blue-secondary: #2980b9;
-@kasette-outline-color: white;
+@dark-blue-primary: #0c89f1;
+@dark-blue-secondary: #0971c7;
+@kassette-outline-color: white;
 @navbar-margin-bottom: 0px;
 @navbar-padding-bottom: 0px;
 @github-color: #4183c4;
@@ -11,12 +11,70 @@
 
 @primary-font-name: 'Quicksand';
 @primary-font-regular: ~'@{primary-font-name}-regular';
+@kassette-font: 'Swingdancer';
 @primary-font-bold: ~'@{primary-font-name}-bold';
 @primary-font-italic: ~'@{primary-font-name}-italic';
 @font-family-base: @primary-font-regular;
 
 @font-size-base: 12px;
 
+
+
+.align-left {
+  text-align: justify;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    // background-color: white;
+    background-image: -webkit-linear-gradient(left, rgba(256,256,256,0), rgba(256,256,256,0.75), rgba(256,256,256,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(256,256,256,0), rgba(256,256,256,0.75), rgba(256,256,256,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(256,256,256,0), rgba(256,256,256,0.75), rgba(256,256,256,0)); 
+    background-image:      -o-linear-gradient(left, rgba(256,256,256,0), rgba(256,256,256,0.75), rgba(256,256,256,0)); 
+}
+
+img.desaturate:hover {
+  -webkit-filter: none; 
+  filter: none; 
+}
+
+img.desaturate { 
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+}
+
+.img-circle {
+  border-radius: 1000px;
+}
+.kassette-font {
+  font-family: @kassette-font;
+}
+.padding-md {
+  padding: 5px;
+}
+
+.kassette-logo {
+  
+}
+#kassette_logo {
+  display:none;
+  // .opacity(0);
+}
+
+
+
+.img-footer-container {
+  background-color: @dark-blue-primary;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+.img-footer-logo {
+  width: 50px;
+}
 
 .undecorated {
   text-decoration: none !important;
@@ -131,6 +189,9 @@ span.tab {
   text-align: justify;
 }
 
+.container-bigger {
+  width: 90%;
+}
 .container-full {
   margin: 0 auto;
   width: 100%;
@@ -142,7 +203,7 @@ span.tab {
 
 
 .special-bg {
-  background: url(../images/pattern-3.png), @dark-blue-secondary;
+  background: url(../images/pattern-10.png), @dark-blue-secondary;
 }
 
 .fixed-bg {
@@ -215,6 +276,13 @@ h1 {
 
 .lighter-text {
   color: lighten(silver, 5%)
+}
+
+
+@font-face {
+  font-family: @kassette-font;
+  font-style: normal;
+  src: url(~'../fonts/@{kassette-font}.ttf');
 }
 
 @font-face {
@@ -294,8 +362,9 @@ h1 {
 }
 
 .text-size-lg-er {
-  font-size: 2em;
+  font-size: 15vw;
 }
+
 
 .text-size-lg {
   font-size: 1.6em;
@@ -457,12 +526,12 @@ svg {
 .traceable-path {
   fill-color: transparent;
   fill-opacity: 1;
-  stroke: @kasette-outline-color;
+  stroke: @kassette-outline-color;
   stroke-width: 1;
 }
 
 circle.circle_spinning {
-  stroke-width: 2;
+  stroke-width: 5;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
 }

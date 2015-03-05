@@ -6163,6 +6163,48 @@ button.close {
     display: none !important;
   }
 }
+.align-left {
+  text-align: justify;
+}
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+img.desaturate:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+img.desaturate {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.img-circle {
+  border-radius: 1000px;
+}
+.kassette-font {
+  font-family: 'Swingdancer';
+}
+.padding-md {
+  padding: 5px;
+}
+#kassette_logo {
+  display: none;
+}
+.img-footer-container {
+  background-color: #0c89f1;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+.img-footer-logo {
+  width: 50px;
+}
 .undecorated {
   text-decoration: none !important;
   color: inherit !important;
@@ -6199,11 +6241,11 @@ button.close {
   display: block;
 }
 .label-primary-color {
-  background-color: #2980b9;
+  background-color: #0971c7;
   cursor: pointer;
 }
 .label-primary-color:hover {
-  background-color: #2980b9;
+  background-color: #0c89f1;
 }
 .my-bar {
   border-right: 1px solid white;
@@ -6223,18 +6265,18 @@ button.close {
   top: 0;
   z-index: 1030;
   width: 100%;
-  background: url(../images/pattern-2.png), #2980b9;
+  background: url(../images/pattern-2.png), #0c89f1;
   border-bottom: 1px solid gray !Important;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .dark-special-bg {
-  background: url(../images/pattern-2.png), #2980b9;
+  background: url(../images/pattern-2.png), #0c89f1;
 }
 .Team:focus,
 .Team:hover {
-  background: url(../images/pattern-2.png), #2980b9;
+  background: url(../images/pattern-2.png), #0c89f1;
   -webkit-box-shadow: inset 0 5px 8px #000000;
   box-shadow: inset 0 5px 8px #000000;
   -webkit-transition: all 0.3s linear;
@@ -6246,7 +6288,7 @@ button.close {
   padding: 0px;
 }
 .transparent-bg *::selection {
-  color: #2980b9;
+  color: #0c89f1;
   background: white;
 }
 span.tab {
@@ -6257,11 +6299,14 @@ span.tab {
   margin-bottom: 0px;
 }
 .white-bg *::selection {
-  background: #2980b9;
+  background: #0c89f1;
   color: white;
 }
 .justify {
   text-align: justify;
+}
+.container-bigger {
+  width: 90%;
 }
 .container-full {
   margin: 0 auto;
@@ -6271,7 +6316,7 @@ span.tab {
   background-color: white;
 }
 .special-bg {
-  background: url(../images/pattern-3.png), #2980b9;
+  background: url(../images/pattern-10.png), #0971c7;
 }
 .fixed-bg {
   background-repeat: repeat;
@@ -6322,16 +6367,21 @@ h1 {
   font-weight: bold;
 }
 .primary-color-text {
-  color: #2980b9;
+  color: #0c89f1;
 }
 .secondary-color-text {
-  color: #2980b9;
+  color: #0c89f1;
 }
 .white-text {
   color: white;
 }
 .lighter-text {
   color: #cdcdcd;
+}
+@font-face {
+  font-family: 'Swingdancer';
+  font-style: normal;
+  src: url(../fonts/Swingdancer.ttf);
 }
 @font-face {
   font-family: Quicksand-regular;
@@ -6397,7 +6447,7 @@ h1 {
   background-color: transparent;
 }
 .text-size-lg-er {
-  font-size: 2em;
+  font-size: 15vw;
 }
 .text-size-lg {
   font-size: 1.6em;
@@ -6420,7 +6470,7 @@ h1 {
   background-color: white;
 }
 .navbar-toggle:hover > .navbar-toggle-bar {
-  background-color: #2980b9;
+  background-color: #0c89f1;
 }
 .navbar-custom {
   z-index: 10;
@@ -6486,8 +6536,8 @@ h1 {
 .btn-custom {
   width: 100%;
   color: #ffffff;
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: #0c89f1;
+  border-color: #0971c7;
 }
 .btn-custom:hover,
 .btn-custom:focus,
@@ -6495,8 +6545,8 @@ h1 {
 .btn-custom.active,
 .open > .dropdown-toggle.btn-custom {
   color: #ffffff;
-  background-color: #20638f;
-  border-color: #1e5d87;
+  background-color: #0a6dc0;
+  border-color: #06508c;
 }
 .btn-custom:active,
 .btn-custom.active,
@@ -6518,19 +6568,19 @@ fieldset[disabled] .btn-custom:active,
 .btn-custom.disabled.active,
 .btn-custom[disabled].active,
 fieldset[disabled] .btn-custom.active {
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: #0c89f1;
+  border-color: #0971c7;
 }
 .btn-custom .badge {
-  color: #2980b9;
+  color: #0c89f1;
   background-color: #ffffff;
 }
 .btn-custom:active {
-  background-color: #2980b9;
+  background-color: #0971c7;
   color: white;
 }
 .ruler-style-blue {
-  background-color: #2980b9;
+  background-color: #0c89f1;
 }
 .btn-custom:hover {
   color: silver;
@@ -6563,7 +6613,7 @@ svg {
   stroke-width: 1;
 }
 circle.circle_spinning {
-  stroke-width: 2;
+  stroke-width: 5;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
 }
