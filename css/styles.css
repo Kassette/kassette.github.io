@@ -6615,24 +6615,9 @@ circle.circle_spinning {
   stroke-width: 5;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-}
-circle.circle_spinning_left {
-  -webkit-transform: translate(150px, 200px);
-  -ms-transform: translate(150px, 200px);
-  -o-transform: translate(150px, 200px);
-  transform: translate(150px, 200px);
-  -webkit-animation: drawSpinningCircleLeft 6s infinite linear, appear 1.5s linear;
-  -o-animation: drawSpinningCircleLeft 6s infinite linear, appear 1.5s linear;
-  animation: drawSpinningCircleLeft 6s infinite linear, appear 1.5s linear;
-}
-circle.circle_spinning_right {
-  -webkit-transform: translate(400px, 200px);
-  -ms-transform: translate(400px, 200px);
-  -o-transform: translate(400px, 200px);
-  transform: translate(400px, 200px);
-  -webkit-animation: drawSpinningCircleRight 6s infinite linear, appear 1.5s linear;
-  -o-animation: drawSpinningCircleRight 6s infinite linear, appear 1.5s linear;
-  animation: drawSpinningCircleRight 6s infinite linear, appear 1.5s linear;
+  -webkit-animation: appear 3s;
+  -o-animation: appear 3s;
+  animation: appear 3s;
 }
 path.border {
   stroke-dasharray: 847;
@@ -6673,90 +6658,6 @@ path.small_circle {
   -webkit-animation: drawSmallCircle 1.5s;
   -o-animation: drawSmallCircle 1.5s;
   animation: drawSmallCircle 1.5s;
-}
-@-moz-keyframes drawSpinningCircleLeft {
-  from {
-    -webkit-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -moz-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -ms-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -o-transform: translateX(150px) translateY(200px) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -moz-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -ms-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -o-transform: translateX(150px) translateY(200px) rotate(360deg);
-  }
-}
-@-webkit-keyframes drawSpinningCircleLeft {
-  from {
-    -webkit-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -moz-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -ms-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -o-transform: translateX(150px) translateY(200px) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -moz-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -ms-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -o-transform: translateX(150px) translateY(200px) rotate(360deg);
-  }
-}
-@keyframes drawSpinningCircleLeft {
-  from {
-    -webkit-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -moz-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -ms-transform: translateX(150px) translateY(200px) rotate(0deg);
-    -o-transform: translateX(150px) translateY(200px) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -moz-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -ms-transform: translateX(150px) translateY(200px) rotate(360deg);
-    -o-transform: translateX(150px) translateY(200px) rotate(360deg);
-  }
-}
-@-moz-keyframes drawSpinningCircleRight {
-  from {
-    -webkit-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -moz-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -ms-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -o-transform: translateX(400px) translateY(200px) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -moz-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -ms-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -o-transform: translateX(400px) translateY(200px) rotate(360deg);
-  }
-}
-@-webkit-keyframes drawSpinningCircleRight {
-  from {
-    -webkit-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -moz-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -ms-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -o-transform: translateX(400px) translateY(200px) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -moz-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -ms-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -o-transform: translateX(400px) translateY(200px) rotate(360deg);
-  }
-}
-@keyframes drawSpinningCircleRight {
-  from {
-    -webkit-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -moz-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -ms-transform: translateX(400px) translateY(200px) rotate(0deg);
-    -o-transform: translateX(400px) translateY(200px) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -moz-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -ms-transform: translateX(400px) translateY(200px) rotate(360deg);
-    -o-transform: translateX(400px) translateY(200px) rotate(360deg);
-  }
 }
 @-moz-keyframes appear {
   from {

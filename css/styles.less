@@ -542,19 +542,7 @@ circle.circle_spinning {
   stroke-width: 5;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-}
-
-circle.circle_spinning_left {
-  @animations: drawSpinningCircleLeft 6s infinite linear,appear 1.5s linear;
-  .translate(150px,200px);
-  .animation(@animations);
-}
-
-
-circle.circle_spinning_right {
-  @animations: drawSpinningCircleRight 6s infinite linear, appear 1.5s linear;
-  .translate(400px,200px);
-  .animation(@animations)
+  .animation(appear 3s);
 }
 
 path.border {
@@ -599,29 +587,6 @@ path.small_circle {
   .animation(drawSmallCircle 1.5s);
 }
 
-.keyframes(drawSpinningCircleLeft, {
- from {
-    @transforms: translateX(150px) translateY(200px) rotate(0deg);
-    .transform(@transforms);
-  }
-  to {
-    @transforms: translateX(150px) translateY(200px) rotate(360deg);
-    .transform(@transforms);
-  }
-});
-
-
-
-.keyframes(drawSpinningCircleRight, {
-  from {
-    @transforms: translateX(400px) translateY(200px) rotate(0deg);
-    .transform(@transforms);
-  }
-  to {
-    @transforms: translateX(400px) translateY(200px) rotate(360deg);
-    .transform(@transforms);
-  }
-});
 
 .keyframes(appear {
   from {
