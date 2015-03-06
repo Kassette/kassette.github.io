@@ -8,7 +8,7 @@
 @navbar-padding-bottom: 0px;
 @github-color: #4183c4;
 @linkedin-color: #3f97c6;
-
+@effect-timing: 3s;
 @primary-font-name: 'Quicksand';
 @primary-font-regular: ~'@{primary-font-name}-regular';
 @kassette-font: 'Swingdancer';
@@ -561,19 +561,19 @@ circle.circle_spinning {
 path.border {
   stroke-dasharray: 847;
   stroke-dashoffset: 0;
-  .animation(draw 1.5s);
+  .animation(draw @effect-timing);
 }
 
 path.line {
   stroke-dasharray: 410;
   stroke-dashoffset: 0;
-  .animation(drawLine 1.5s);
+  .animation(drawLine @effect-timing);
 }
 
 path.top_frame {
   stroke-dasharray: 517;
   stroke-dashoffset: 0;
-  .animation(drawTopFrame 1.5s);
+  .animation(drawTopFrame @effect-timing);
 }
 
 
@@ -581,7 +581,7 @@ path.top_frame {
 path.bottom_frame {
   stroke-dasharray: 776;
   stroke-dashoffset: 0;
-  -webkit-animation: drawBottomFrame 1.5s;
+  -webkit-animation: drawBottomFrame @effect-timing;
 }
 
 
@@ -590,14 +590,14 @@ path.bottom_frame {
 path.circle {
   stroke-dasharray: 125;
   stroke-dashoffset: 0;
-  .animation(drawCircle 1.5s);
+  .animation(drawCircle @effect-timing);
 }
 
 
 path.small_circle {
   stroke-dasharray: 31;
   stroke-dashoffset: 0;
-  .animation(drawSmallCircle 1.5s);
+  .animation(drawSmallCircle @effect-timing);
 }
 
 

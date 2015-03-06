@@ -6635,42 +6635,42 @@ circle.circle_spinning {
 path.border {
   stroke-dasharray: 847;
   stroke-dashoffset: 0;
-  -webkit-animation: draw 1.5s;
-  -o-animation: draw 1.5s;
-  animation: draw 1.5s;
+  -webkit-animation: draw 3s;
+  -o-animation: draw 3s;
+  animation: draw 3s;
 }
 path.line {
   stroke-dasharray: 410;
   stroke-dashoffset: 0;
-  -webkit-animation: drawLine 1.5s;
-  -o-animation: drawLine 1.5s;
-  animation: drawLine 1.5s;
+  -webkit-animation: drawLine 3s;
+  -o-animation: drawLine 3s;
+  animation: drawLine 3s;
 }
 path.top_frame {
   stroke-dasharray: 517;
   stroke-dashoffset: 0;
-  -webkit-animation: drawTopFrame 1.5s;
-  -o-animation: drawTopFrame 1.5s;
-  animation: drawTopFrame 1.5s;
+  -webkit-animation: drawTopFrame 3s;
+  -o-animation: drawTopFrame 3s;
+  animation: drawTopFrame 3s;
 }
 path.bottom_frame {
   stroke-dasharray: 776;
   stroke-dashoffset: 0;
-  -webkit-animation: drawBottomFrame 1.5s;
+  -webkit-animation: drawBottomFrame 3s;
 }
 path.circle {
   stroke-dasharray: 125;
   stroke-dashoffset: 0;
-  -webkit-animation: drawCircle 1.5s;
-  -o-animation: drawCircle 1.5s;
-  animation: drawCircle 1.5s;
+  -webkit-animation: drawCircle 3s;
+  -o-animation: drawCircle 3s;
+  animation: drawCircle 3s;
 }
 path.small_circle {
   stroke-dasharray: 31;
   stroke-dashoffset: 0;
-  -webkit-animation: drawSmallCircle 1.5s;
-  -o-animation: drawSmallCircle 1.5s;
-  animation: drawSmallCircle 1.5s;
+  -webkit-animation: drawSmallCircle 3s;
+  -o-animation: drawSmallCircle 3s;
+  animation: drawSmallCircle 3s;
 }
 @-moz-keyframes appear {
   from {
