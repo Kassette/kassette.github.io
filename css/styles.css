@@ -6207,7 +6207,7 @@ img.desaturate {
   padding: 5px;
 }
 #kassette_logo {
-  display: none;
+  visibility: hidden;
 }
 .float-right {
   text-align: right;

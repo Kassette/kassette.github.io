@@ -1,5 +1,6 @@
 $(function() {
-  $(kassette_logo).fadeIn(1500);
+
+  $(kassette_logo).css('visibility','visible').hide().fadeIn(1500);
   // Smooth scrolling
   $('a[href*=#]:not([href=#])').click(function(item) {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
