@@ -6163,6 +6163,19 @@ button.close {
     display: none !important;
   }
 }
+.linked-in-button:hover {
+  color: #0c89f1;
+  background-color: white;
+}
+.linked-in-button {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 1000px;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 1px 0px #000000;
+  box-shadow: 0px 1px 0px #000000;
+}
 .align-left {
   text-align: justify;
 }
