@@ -6163,9 +6163,19 @@ button.close {
     display: none !important;
   }
 }
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+#svg-404 {
+  width: 100%;
+}
+#page_not_found {
+  font-family: Quicksand-regular;
+  visibility: hidden;
+}
 .center-window {
-  width: 40vw;
-  height: 50vh;
+  text-align: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6468,6 +6478,9 @@ h1 {
 }
 .transparent-bg {
   background-color: transparent;
+}
+.text-size-lg-er-sm {
+  font-size: 6vw;
 }
 .text-size-lg-er {
   font-size: 15vw;
