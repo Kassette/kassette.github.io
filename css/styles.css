@@ -6163,6 +6163,16 @@ button.close {
     display: none !important;
   }
 }
+.center-window {
+  width: 40vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 .linked-in-button:hover {
   color: #0c89f1;
   background-color: white;
@@ -6622,6 +6632,12 @@ svg {
   max-height: 650px;
   max-width: 800px;
 }
+.traceable-path-404 {
+  fill-color: transparent;
+  fill-opacity: 0;
+  stroke: #ffffff;
+  stroke-width: 1;
+}
 .traceable-path {
   fill-color: transparent;
   fill-opacity: 1;
@@ -6642,6 +6658,13 @@ path.border {
   -webkit-animation: draw 3s;
   -o-animation: draw 3s;
   animation: draw 3s;
+}
+path.liner {
+  stroke-dasharray: 1105;
+  stroke-dashoffset: 0;
+  -webkit-animation: drawLiner 10s;
+  -o-animation: drawLiner 10s;
+  animation: drawLiner 10s;
 }
 path.line {
   stroke-dasharray: 410;
@@ -6803,6 +6826,33 @@ path.small_circle {
   from {
     stroke-dasharray: 847;
     stroke-dashoffset: 847;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes drawLiner {
+  from {
+    stroke-dasharray: 1105;
+    stroke-dashoffset: 1105;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes drawLiner {
+  from {
+    stroke-dasharray: 1105;
+    stroke-dashoffset: 1105;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawLiner {
+  from {
+    stroke-dasharray: 1105;
+    stroke-dashoffset: 1105;
   }
   to {
     stroke-dashoffset: 0;
