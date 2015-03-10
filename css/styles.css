@@ -6673,58 +6673,11 @@ path.kassette-inside {
 }
 path.kassette-outline {
   fill: white;
-  stroke-dasharray: 2996;
+  stroke-dasharray: 3672;
   stroke-dashoffset: 0;
   -webkit-animation: draw-kassette-outline 10s;
   -o-animation: draw-kassette-outline 10s;
   animation: draw-kassette-outline 10s;
-}
-path.border {
-  stroke-dasharray: 847;
-  stroke-dashoffset: 0;
-  -webkit-animation: draw 10s;
-  -o-animation: draw 10s;
-  animation: draw 10s;
-}
-path.liner {
-  stroke-dasharray: 1105;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawLiner 10s;
-  -o-animation: drawLiner 10s;
-  animation: drawLiner 10s;
-}
-path.line {
-  stroke-dasharray: 410;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawLine 10s;
-  -o-animation: drawLine 10s;
-  animation: drawLine 10s;
-}
-path.top_frame {
-  stroke-dasharray: 517;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawTopFrame 10s;
-  -o-animation: drawTopFrame 10s;
-  animation: drawTopFrame 10s;
-}
-path.bottom_frame {
-  stroke-dasharray: 776;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawBottomFrame 10s;
-}
-path.circle {
-  stroke-dasharray: 125;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawCircle 10s;
-  -o-animation: drawCircle 10s;
-  animation: drawCircle 10s;
-}
-path.small_circle {
-  stroke-dasharray: 31;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawSmallCircle 10s;
-  -o-animation: drawSmallCircle 10s;
-  animation: drawSmallCircle 10s;
 }
 @-moz-keyframes appear {
   from {
@@ -6750,208 +6703,103 @@ path.small_circle {
     stroke-dasharray: 10;
   }
 }
-@-moz-keyframes drawLine {
-  from {
-    stroke-dasharray: 410;
-    stroke-dashoffset: 410;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes drawLine {
-  from {
-    stroke-dasharray: 410;
-    stroke-dashoffset: 410;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes drawLine {
-  from {
-    stroke-dasharray: 410;
-    stroke-dashoffset: 410;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-moz-keyframes drawBottomFrame {
-  from {
-    stroke-dasharray: 776;
-    stroke-dashoffset: 776;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes drawBottomFrame {
-  from {
-    stroke-dasharray: 776;
-    stroke-dashoffset: 776;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes drawBottomFrame {
-  from {
-    stroke-dasharray: 776;
-    stroke-dashoffset: 776;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-moz-keyframes drawTopFrame {
-  from {
-    stroke-dasharray: 517;
-    stroke-dashoffset: 517;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes drawTopFrame {
-  from {
-    stroke-dasharray: 517;
-    stroke-dashoffset: 517;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes drawTopFrame {
-  from {
-    stroke-dasharray: 517;
-    stroke-dashoffset: 517;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-moz-keyframes draw {
-  from {
-    stroke-dasharray: 847;
-    stroke-dashoffset: 847;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes draw {
-  from {
-    stroke-dasharray: 847;
-    stroke-dashoffset: 847;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes draw {
-  from {
-    stroke-dasharray: 847;
-    stroke-dashoffset: 847;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 @-moz-keyframes draw-kassette-outline {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 2996;
-    stroke-dashoffset: 2996;
+    stroke-dashoffset: 3672;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+  35% {
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: #ffffff;
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 }
 @-webkit-keyframes draw-kassette-outline {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 2996;
-    stroke-dashoffset: 2996;
+    stroke-dashoffset: 3672;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+  35% {
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: #ffffff;
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 }
 @keyframes draw-kassette-outline {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 2996;
-    stroke-dashoffset: 2996;
+    stroke-dashoffset: 3672;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+  35% {
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: #ffffff;
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 }
 @-moz-keyframes draw-kassette-inside {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 1470;
     stroke-dashoffset: 1470;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  35% {
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: #ffffff;
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 }
 @-webkit-keyframes draw-kassette-inside {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 1470;
     stroke-dashoffset: 1470;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  35% {
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: #ffffff;
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 }
 @keyframes draw-kassette-inside {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 1470;
     stroke-dashoffset: 1470;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  35% {
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: #ffffff;
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 }
 @-moz-keyframes drawLiner {
@@ -6976,60 +6824,6 @@ path.small_circle {
   from {
     stroke-dasharray: 1105;
     stroke-dashoffset: 1105;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-moz-keyframes drawSmallCircle {
-  from {
-    stroke-dasharray: 31;
-    stroke-dashoffset: 31;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes drawSmallCircle {
-  from {
-    stroke-dasharray: 31;
-    stroke-dashoffset: 31;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes drawSmallCircle {
-  from {
-    stroke-dasharray: 31;
-    stroke-dashoffset: 31;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-moz-keyframes drawCircle {
-  from {
-    stroke-dasharray: 125;
-    stroke-dashoffset: 125;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes drawCircle {
-  from {
-    stroke-dasharray: 125;
-    stroke-dashoffset: 125;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes drawCircle {
-  from {
-    stroke-dasharray: 125;
-    stroke-dashoffset: 125;
   }
   to {
     stroke-dashoffset: 0;

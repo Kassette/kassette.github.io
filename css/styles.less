@@ -604,58 +604,11 @@ path.kassette-inside {
 
 path.kassette-outline {
   fill: white;
-  stroke-dasharray: 2996;
+  stroke-dasharray: 3672;
   stroke-dashoffset: 0;
   .animation(draw-kassette-outline @effect-timing);
 }
 
-path.border {
-  stroke-dasharray: 847;
-  stroke-dashoffset: 0;
-  .animation(draw @effect-timing);
-}
-
-path.liner {
-  stroke-dasharray: 1105;
-  stroke-dashoffset: 0;
-  .animation(drawLiner 10s);
-}
-
-path.line {
-  stroke-dasharray: 410;
-  stroke-dashoffset: 0;
-  .animation(drawLine @effect-timing);
-}
-
-path.top_frame {
-  stroke-dasharray: 517;
-  stroke-dashoffset: 0;
-  .animation(drawTopFrame @effect-timing);
-}
-
-
-
-path.bottom_frame {
-  stroke-dasharray: 776;
-  stroke-dashoffset: 0;
-  -webkit-animation: drawBottomFrame @effect-timing;
-}
-
-
-
-
-path.circle {
-  stroke-dasharray: 125;
-  stroke-dashoffset: 0;
-  .animation(drawCircle @effect-timing);
-}
-
-
-path.small_circle {
-  stroke-dasharray: 31;
-  stroke-dashoffset: 0;
-  .animation(drawSmallCircle @effect-timing);
-}
 
 
 .keyframes(appear {
@@ -667,45 +620,7 @@ path.small_circle {
   }
 });
 
-.keyframes(drawLine {
-  from {
-    stroke-dasharray: 410;
-    stroke-dashoffset: 410;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-});
 
-.keyframes(drawBottomFrame {
-  from {
-    stroke-dasharray: 776;
-    stroke-dashoffset: 776;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-});
-
-.keyframes(drawTopFrame {
-  from {
-    stroke-dasharray: 517;
-    stroke-dashoffset: 517;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-});
-
-.keyframes(draw {
-  from {
-    stroke-dasharray: 847;
-    stroke-dashoffset: 847;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-});
 
 
 
@@ -713,17 +628,19 @@ path.small_circle {
 .keyframes(draw-kassette-outline {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 2996;
-    stroke-dashoffset: 2996;
+    stroke-dashoffset: 3672;
   }
-  30% {
+  90% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+  35% { 
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: rgba(255, 255, 255, 1);
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 });
 
@@ -731,17 +648,17 @@ path.small_circle {
 .keyframes(draw-kassette-inside {
   0% {
     fill: rgba(255, 255, 255, 0);
-    stroke-dasharray: 1470;
     stroke-dashoffset: 1470;
   }
-  30% {
+
+  90% {
+    stroke-dashoffset: 0;
+  }
+  35% { 
     fill: rgba(255, 255, 255, 0);
   }
-  50% {
+  55% {
     fill: rgba(255, 255, 255, 1);
-  }
-  80% {
-    stroke-dashoffset: 0;
   }
 });
 
@@ -757,22 +674,3 @@ path.small_circle {
 
 
 
-.keyframes(drawSmallCircle {
-  from {
-    stroke-dasharray: 31;
-    stroke-dashoffset: 31;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-});
-
-.keyframes(drawCircle {
-  from {
-    stroke-dasharray: 125;
-    stroke-dashoffset: 125;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-});
