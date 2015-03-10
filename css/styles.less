@@ -610,6 +610,21 @@ path.kassette-outline {
   .animation(draw-kassette-outline @effect-timing);
 }
 
+path.liner {
+  stroke-dasharray: 1105;
+  stroke-dashoffset: 0;
+  .animation(draw-liner @effect-timing);
+}
+
+.keyframes(draw-liner {
+  from {
+    
+    stroke-dashoffset: 1105;
+  }
+  to {
+    stroke-dashoffset:  0;
+  }
+});
 
 
 .keyframes(appear {

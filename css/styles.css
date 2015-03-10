@@ -6680,6 +6680,37 @@ path.kassette-outline {
   -o-animation: draw-kassette-outline 10s;
   animation: draw-kassette-outline 10s;
 }
+path.liner {
+  stroke-dasharray: 1105;
+  stroke-dashoffset: 0;
+  -webkit-animation: draw-liner 10s;
+  -o-animation: draw-liner 10s;
+  animation: draw-liner 10s;
+}
+@-moz-keyframes draw-liner {
+  from {
+    stroke-dashoffset: 1105;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw-liner {
+  from {
+    stroke-dashoffset: 1105;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-liner {
+  from {
+    stroke-dashoffset: 1105;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 @-moz-keyframes appear {
   from {
     stroke-dasharray: 3;
