@@ -6652,8 +6652,6 @@ svg {
   stroke-width: 1;
 }
 .traceable-path {
-  fill-color: transparent;
-  fill-opacity: 1;
   stroke: #ffffff;
   stroke-width: 1;
 }
@@ -6665,12 +6663,28 @@ circle.circle_spinning {
   -o-animation: appear 3s;
   animation: appear 3s;
 }
+path.kassette-inside {
+  fill: white;
+  stroke-dasharray: 1470;
+  stroke-dashoffset: 0;
+  -webkit-animation: draw-kassette-inside 10s;
+  -o-animation: draw-kassette-inside 10s;
+  animation: draw-kassette-inside 10s;
+}
+path.kassette-outline {
+  fill: white;
+  stroke-dasharray: 2996;
+  stroke-dashoffset: 0;
+  -webkit-animation: draw-kassette-outline 10s;
+  -o-animation: draw-kassette-outline 10s;
+  animation: draw-kassette-outline 10s;
+}
 path.border {
   stroke-dasharray: 847;
   stroke-dashoffset: 0;
-  -webkit-animation: draw 3s;
-  -o-animation: draw 3s;
-  animation: draw 3s;
+  -webkit-animation: draw 10s;
+  -o-animation: draw 10s;
+  animation: draw 10s;
 }
 path.liner {
   stroke-dasharray: 1105;
@@ -6682,35 +6696,35 @@ path.liner {
 path.line {
   stroke-dasharray: 410;
   stroke-dashoffset: 0;
-  -webkit-animation: drawLine 3s;
-  -o-animation: drawLine 3s;
-  animation: drawLine 3s;
+  -webkit-animation: drawLine 10s;
+  -o-animation: drawLine 10s;
+  animation: drawLine 10s;
 }
 path.top_frame {
   stroke-dasharray: 517;
   stroke-dashoffset: 0;
-  -webkit-animation: drawTopFrame 3s;
-  -o-animation: drawTopFrame 3s;
-  animation: drawTopFrame 3s;
+  -webkit-animation: drawTopFrame 10s;
+  -o-animation: drawTopFrame 10s;
+  animation: drawTopFrame 10s;
 }
 path.bottom_frame {
   stroke-dasharray: 776;
   stroke-dashoffset: 0;
-  -webkit-animation: drawBottomFrame 3s;
+  -webkit-animation: drawBottomFrame 10s;
 }
 path.circle {
   stroke-dasharray: 125;
   stroke-dashoffset: 0;
-  -webkit-animation: drawCircle 3s;
-  -o-animation: drawCircle 3s;
-  animation: drawCircle 3s;
+  -webkit-animation: drawCircle 10s;
+  -o-animation: drawCircle 10s;
+  animation: drawCircle 10s;
 }
 path.small_circle {
   stroke-dasharray: 31;
   stroke-dashoffset: 0;
-  -webkit-animation: drawSmallCircle 3s;
-  -o-animation: drawSmallCircle 3s;
-  animation: drawSmallCircle 3s;
+  -webkit-animation: drawSmallCircle 10s;
+  -o-animation: drawSmallCircle 10s;
+  animation: drawSmallCircle 10s;
 }
 @-moz-keyframes appear {
   from {
@@ -6841,6 +6855,102 @@ path.small_circle {
     stroke-dashoffset: 847;
   }
   to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes draw-kassette-outline {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 2996;
+    stroke-dashoffset: 2996;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: #ffffff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw-kassette-outline {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 2996;
+    stroke-dashoffset: 2996;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: #ffffff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-kassette-outline {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 2996;
+    stroke-dashoffset: 2996;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: #ffffff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes draw-kassette-inside {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 1470;
+    stroke-dashoffset: 1470;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: #ffffff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw-kassette-inside {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 1470;
+    stroke-dashoffset: 1470;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: #ffffff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-kassette-inside {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 1470;
+    stroke-dashoffset: 1470;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: #ffffff;
+  }
+  80% {
     stroke-dashoffset: 0;
   }
 }

@@ -8,7 +8,7 @@
 @navbar-padding-bottom: 0px;
 @github-color: #4183c4;
 @linkedin-color: #3f97c6;
-@effect-timing: 3s;
+@effect-timing: 10s;
 @primary-font-name: 'Quicksand';
 @primary-font-regular: ~'@{primary-font-name}-regular';
 @kassette-font: 'Swingdancer';
@@ -583,8 +583,6 @@ svg {
 }
 
 .traceable-path {
-  fill-color: transparent;
-  fill-opacity: 1;
   stroke: @kassette-outline-color;
   stroke-width: 1;
 }
@@ -594,6 +592,21 @@ circle.circle_spinning {
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
   .animation(appear 3s);
+}
+
+
+path.kassette-inside {
+  fill: white;
+  stroke-dasharray: 1470;
+  stroke-dashoffset: 0;
+  .animation(draw-kassette-inside @effect-timing);
+}
+
+path.kassette-outline {
+  fill: white;
+  stroke-dasharray: 2996;
+  stroke-dashoffset: 0;
+  .animation(draw-kassette-outline @effect-timing);
 }
 
 path.border {
@@ -695,6 +708,43 @@ path.small_circle {
 });
 
 
+
+
+.keyframes(draw-kassette-outline {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 2996;
+    stroke-dashoffset: 2996;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: rgba(255, 255, 255, 1);
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+});
+
+
+.keyframes(draw-kassette-inside {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 1470;
+    stroke-dashoffset: 1470;
+  }
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  50% {
+    fill: rgba(255, 255, 255, 1);
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+});
+
 .keyframes(drawLiner {
   from {
     stroke-dasharray: 1105;
@@ -704,6 +754,8 @@ path.small_circle {
     stroke-dashoffset: 0;
   }
 });
+
+
 
 .keyframes(drawSmallCircle {
   from {
