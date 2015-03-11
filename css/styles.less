@@ -431,9 +431,23 @@ h1 {
 .text-size-lg-er-sm {
   font-size: 6vw;
 }
+
+
+@media(max-width: @screen-xs-max){
+  .text-size-lg-er {
+    font-size: 25vw;
+  }
+}
+@media(min-width: @screen-sm-min){
+  .text-size-lg-er {
+    font-size: 20vw;
+  }
+  }  /* deprecated: @screen-tablet, or @screen-sm */
+@media(min-width: @screen-md-min){}  /* deprecated: @screen-desktop, or @screen-md */
+@media(min-width: @screen-lg-min){
 .text-size-lg-er {
   font-size: 15vw;
-}
+}}  
 
 
 .text-size-lg {
