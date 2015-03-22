@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest" style="overflow: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Kassette Plan</title>
+        <link rel="canonical" href="./Plan_files/Plan.html">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <script>
+            // Use ?debug to serve original JavaScript files instead of minified
+            window.baseDir = 'res';
+            if (!/(\?|&)debug($|&)/.test(location.search)) {
+                window.baseDir += '-min';
+            }
+            window.require = {
+                baseUrl: window.baseDir,
+                deps: ['main']
+            };
+        </script>
+        <script src="./Plan_files/require.js"></script><style type="text/css"></style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Plan_files/main.js"></script><link type="text/css" rel="stylesheet" href="./Plan_files/default.css"><script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({
+	skipStartupTypeset: true,
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: [
+            "TeX"
+        ],
+        linebreaks: {
+            automatic: true
+        },
+        EqnChunk: 10,
+        imageFont: null
+    },
+    tex2jax: { inlineMath: [["$","$"],["\\\\(","\\\\)"]], displayMath: [["$$","$$"],["\\[","\\]"]], processEscapes: true },
+    TeX: $.extend({
+        noUndefined: {
+            attributes: {
+                mathcolor: "red",
+                mathbackground: "#FFEEEE",
+                mathsize: "90%"
+            }
+        },
+        Safe: {
+            allow: {
+                URLs: "safe",
+                classes: "safe",
+                cssIDs: "safe",
+                styles: "safe",
+                fontsize: "all"
+            }
+        }
+    }, undefined),
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mathjax" src="./Plan_files/MathJax.js"></script><style type="text/css">@media (min-width: 0px) {
+#wmd-input {
+   font-size: 16px;
+}
+#preview-contents {
+   font-size: 16px;
+}
+}@media (min-width: 600px) {
+#wmd-input {
+   font-size: 17px;
+}
+#preview-contents {
+   font-size: 17px;
+}
+}@media (min-width: 1200px) {
+#wmd-input {
+   font-size: 18px;
+}
+#preview-contents {
+   font-size: 18px;
+}
+}</style><style type="text/css">@keyframes working-indicator-bar0 {
+    0% { opacity:0.25; }
+    0.01% { opacity:0.25; }
+    0.02% { opacity:1; }
+    50.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@-webkit-keyframes working-indicator-bar0 {
+    0% { opacity:0.25; }
+    0.01% { opacity:0.25; }
+    0.02% { opacity:1; }
+    50.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@keyframes working-indicator-bar1 {
+    0% { opacity:0.25; }
+    20.01% { opacity:0.25; }
+    20.02% { opacity:1; }
+    70.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@-webkit-keyframes working-indicator-bar1 {
+    0% { opacity:0.25; }
+    20.01% { opacity:0.25; }
+    20.02% { opacity:1; }
+    70.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@keyframes working-indicator-bar2 {
+    0% { opacity:0.25; }
+    40.01% { opacity:0.25; }
+    40.02% { opacity:1; }
+    90.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@-webkit-keyframes working-indicator-bar2 {
+    0% { opacity:0.25; }
+    40.01% { opacity:0.25; }
+    40.02% { opacity:1; }
+    90.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">.MathJax_Preview .MJXc-math {color: inherit!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXc-script {font-size: .8em}
+.MJXc-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXc-bold {font-weight: bold}
+.MJXc-italic {font-style: italic}
+.MJXc-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-largeop {font-size: 150%}
+.MJXc-largeop.MJXc-int {vertical-align: -.2em}
+.MJXc-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXc-display {display: block; text-align: center; margin: 1em 0}
+.MJXc-math span {display: inline-block}
+.MJXc-box {display: block!important; text-align: center}
+.MJXc-box:after {content: " "}
+.MJXc-rule {display: block!important; margin-top: .1em}
+.MJXc-char {display: block!important}
+.MJXc-mo {margin: 0 .15em}
+.MJXc-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXc-denom {display: inline-table!important; width: 100%}
+.MJXc-denom > * {display: table-row!important}
+.MJXc-surd {vertical-align: top}
+.MJXc-surd > * {display: block!important}
+.MJXc-script-box > *  {display: table!important; height: 50%}
+.MJXc-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXc-script-box > *:last-child > * {vertical-align: bottom}
+.MJXc-script-box > * > * > * {display: block!important}
+.MJXc-mphantom {visibility: hidden}
+.MJXc-munderover {display: inline-table!important}
+.MJXc-over {display: inline-block!important; text-align: center}
+.MJXc-over > * {display: block!important}
+.MJXc-munderover > * {display: table-row!important}
+.MJXc-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXc-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXc-mtr {display: table-row!important}
+.MJXc-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXc-mtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-mlabeledtr {display: table-row!important}
+.MJXc-mlabeledtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mlabeledtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXc-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXc-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXc-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXc-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXc-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXc-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXc-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXc-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXc-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXc-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_CHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+    <body class="viewer ltr" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden;"><div id="MathJax_Message" style="display: none;"></div><div class="layout-wrapper-l1" style="-webkit-transform: translate(-280px, 0px); transform: translate(-280px, 0px); width: 2520px; height: 1034px;">
+	<div class="layout-wrapper-l2" style="left: 280px; width: 1920px; height: 1034px;">
+		
+		<div class="layout-wrapper-l3" style="top: 50px; width: 1920px; height: 984px;">
+			<pre id="wmd-input" class="form-control font-rich"><div class="editor-content" style="padding-left: 510px; padding-right: 510px; padding-bottom: 924px;"><span id="wmd-input-section-1" class="wmd-input-section">![Kassette](http://s8.postimg.org/4ud6km0xg/Screen_Shot_2015_03_21_at_10_27_09_PM.jpg)
+
+</span><span id="wmd-input-section-2" class="wmd-input-section">#Index
+&gt; TODO
+</span><span id="wmd-input-section-3" class="wmd-input-section"># Marketing Plan 
+---
+
+</span><span id="wmd-input-section-4" class="wmd-input-section">### Introduction
+Road trips with friends are pretty much synonymous with loud music and singing along. But theres just one problem, you realize your friends have terrible taste in music and you want to play your music instead. Problem is you can only connect one device at a time to play music, whether it be via auxiliary cord or bluetooth. Yes, you can disconnect the auxiliary cord and pass it around, but theres no guarantees it will reach you in the back seat and setting up bluetooth can only be done when the car is parked.
+
+Solution, Kassette is an Android App that allows you to push your music directly to the phone that is connected to the car so you don't have to go through the hassle of passing the auxiliary cord or setting up bluetooth. Essentially this is done by having the phone connected to the car to set up a “Trip,” then you and everyone else in the car can push songs you want to listen to next, like a shared playlist. In addition, users also have the ability to down vote the current song being played. If a majority vote is reached, then the song is skipped. Lastly, Kassette  can also be used at party’s or small get togethers among friends and can enhance any social gatherings.
+
+---
+</span><span id="wmd-input-section-5" class="wmd-input-section">### Mission Statement
+
+Kassette - Your DJ companion.
+Kassette aims to simply sharing songs and allowing multiple people to DJ rather than go through the trouble of listening to only one person's music. Our goal is to make social environments more enjoyable by allowing people to listen to songs they want. 
+
+---
+</span><span id="wmd-input-section-6" class="wmd-input-section">###Demographics
+We want to target students both males and females from the ages 16 to 25 in the US. More specifically these students have social lives, but very little money. So typically their social lives involves doing things that cost little to nothing, meaning hangout at someones house/dorm or just driving around/road trips. By focusing on students in this age range means that they are typically more tech savvy and willing to try a free app and are integrated into some type of social network like Facebook, Twitter, etc. So if they love an app, they are more willing to post it or share it on their social networks.
+
+---
+</span><span id="wmd-input-section-7" class="wmd-input-section">### Market Research 
+
+</span><span id="wmd-input-section-8" class="wmd-input-section">#### Competition
+
+**Top 10 Competitors:**
+
+1. Spotify
+2. Beats Music
+3. Google Play Music
+4. JukeBox for Spotify
+5. Jukebox 
+6. Songza
+7. Pandora
+8. RockBot
+9. TouchTunes
+10. Rhapsody
+
+**Competition Analysis:**
+
+Our top five competitors can be broken into two groups, direct and indirect: 
+
+Our indirect competitors would be music streaming apps that can copy our concept, which include Spotify, Beats Music, and Google Play Music. Now, in terms of Spotify and Google Play Music, if you don't have the monthly paid subscription for either then you are not able to use the service (Google Play Music) on a mobile device or are subjected to a random selection of songs that is out of your control (Spotify). With Beats Music there is no monthly subscription, but you are limited in your music selection.
+
+Our direct competitors are apps that have similar concepts like JukeBox and JukeBox for Spotify, but each have limitations. With JukeBox you are limited to the songs that the “jukebox” phone has, meaning you cannot push songs that are on your phone or any other phone. JukeBox for Spotify requires GPS and you are not able to use it in a car, meaning you have to be stationary. On top of that, both of them crash frequently. 
+
+With Kassette we will strive to provide a subscription free app that does not require any internet access. Users will be able to push the saved songs on their phones to create dynamic playlists while traveling. We also plan to implement a voting feature that allows users to be able to either up-vote a song to move up in the list or down-vote to move a song down. If the currently played song gets a majority number of down votes, it will be skipped.
+
+|Spotify|Google PlayMusic| Beats Music| Jukebox for Spotify | Jukebox
+|:-:|:-:|:-:|:-:|:-:|
+| ![Spotify](http://s10.postimg.org/d12n7zor9/App_Spotify_icon.png) | ![Google PlayStore](http://s10.postimg.org/7e6aaim8l/app_google_music.png) | ![Beats Music](http://s10.postimg.org/amarnk8id/Beats_Electronics_Logo.jpg) | ![Jukebox for Spotify](http://s10.postimg.org/hyg7t3qqd/icon175x175.png) | ![Jukebox](http://s10.postimg.org/w3m0uwzrp/jukebox.png)
+
+
+
+![Capture 2.PNG](https://bitbucket.org/repo/AyA7nM/images/400231068-Capture%202.PNG)
+
+![Capture 3.PNG](https://bitbucket.org/repo/AyA7nM/images/225904447-Capture%203.PNG)
+
+</span><span id="wmd-input-section-9" class="wmd-input-section">#### Market Info
+Our minimum target API os Jelly Bean due to the fact that our app uses WiFi direct. WiFi direct technology requires a chip that was not included in phones below Android 4.1. However, this won't pose a problem as research indicates that over 80% of the android Market consists of android version Jelly bean or higher. This is over 774 million devices Android devices.
+
+![Market Size](http://s8.postimg.org/6dwd80n90/Screen_Shot_2015_03_21_at_6_03_53_PM.jpg)
+
+
+
+---
+
+</span><span id="wmd-input-section-10" class="wmd-input-section">### Pricing / Business Pricing Strategies
+To monetize our app, we plan to use two approaches. First, we plan on releasing the app as a free version on the Google Play Store. This app will contain advertising to generate revenue, and gather the user's location data which will later be sold (more on this later). Then, there is going to be an alternate “PRO” version of the app which will contain absolutely no advertising but will still collect location data. In addition, the “PRO” version of the app will range from \$0.99 - \$1.99 on the Google Play Store. We plan on selling the “PRO” version at an initial cost of $1.99 and then gauge if reducing the app price would drive sales.
+
+Besides generating revenue from advertising and selling it on the Play Store the app will also passively collect background location information. This user data is valuable to a lot of online marketplaces such as Data Exchange, InfoChimp and AggData, HandShake, DataCoup. These online data warehousing companies broker deals with companies to buy user data. HandShake offers a pricing model of a flat $8 fee per month but this requires credit card information from the user. Since there is no way to acquire a figure on how much location data is worth to companies, we estimate that companies are willing to pay at least a hundredth of what they are willing to pay for a user’s personal location. 
+
+We use this modest projection of \$0.08 per KB of data to estimate revenue generated annually. On average Americans drive 15,291 miles per year. This is around 244 hours spent on driving annually. We use an estimate that on average users only spend only around a fraction of this time on a road trip, around eight hours. Eight hours of collection location data can generate up to 1.5KB of bankable data. Now, we project having at least 15,000 downloads on our apps as apps similar to this idea like “Jukebox” and “Jukebox for Spotify” have similar install rates. Assuming only 10,000 people use the app actively every year for 8 hours, generating 10KB of data annually and that we can broker a deal to sell this data at \$0.08, our revenue from location data alone will amount to $8,000 per year.
+
+Additionally our app will also be sold on the app store. We estimate that only around 2% of the users will buy the app. This will account for \$200 in sales and after the google fee, we will make around  \$140 on the app annually. On the free app side, We use the figures from Forbes of \$0.18 generated from ads and for 98% of our remaining user base of 10,000 active users, we estimate that we will make around \$1800. In total, we project our first year revenue of $9,940.
+
+</span><span id="wmd-input-section-11" class="wmd-input-section">#### **Revenue Table**
+
+| Year | Downloads| Revenue     |
+|:----:|----------:|------------:|
+| 1 | 15,000| \$10,000
+|2|25,000 | \$18,000
+|3|40,000 | \$29,000
+|4|60,000 | \$42,000
+
+
+--- 
+</span><span id="wmd-input-section-12" class="wmd-input-section">### Production Cost
+
+Kassette was developed by a three member team. Doing an analysis of the commits per week, and the amount of code pushed by the team members, we estimated that we worked on Kassette at least 33 hours per week (11 hours per team member). An additional 15 hours were added for research for the following reasons. Our  team project manager, Mohammed Islam, spent a consider amount of time looking into WiFi-Direct technology and using it on Android. Mohammed had previous android experience and was able to get up and running developing the app a lot faster than the other two team members, Saurabh and Ali. Saurabh and Ali spent a lot of time researching into fragments, and learning the Android API. So with this we tally a total of  hours per week that we worked on the app. Development of the app by Mohammed started earlier in week 5, where as development by Saurabh and did not start until Week 6. Therefore, a grand total of 178 hours were put into the development of the code base. 
+In addition to the hours above, we also spent time preparing for mock up presentations and creating this bussiness plan. We add a total of low estimate of  10 hours to that as the planning, brainstorming session, and presentation preps for Kassette were long. 
+In order to calculate the time of value of each member, we used the amount they will be paid this summer for their internships and full-time work. For Mohammed Islam, he will be receiving \$37 an hour at SalesForce, Saurabh Sharma will be receiving \$54/hour for full-time work at Microsoft, and Ali Talpur will be receiving \$35/ hour at Sony Playstation.
+
+| Type | Saurabh Sharma | Mohammed Islam | Ali Talpur | X |
+|:------:|:---------------:|:--------------:|:----------:|:--:|
+| **Dev Time** | 44 (11 hours / 4 weeks) | 55 (11 hours / 5 weeks) |  44 (11 hours / 4 weeks) |x  | 
+| **Research Hours** | 15   | 20 | 10 |x  | 
+| **Total Hours** | 59 | 75 | 44 |x  | 
+| **Rate / Dev** | \$54 | \$37 | \$35 |x  | 
+| **Member Salaries** | \$3,186 | \$2,775 | \$1,890 |x  | 
+| x | x | x | **Grand Total** | \$7,851|
+
+
+--- 
+
+</span><span id="wmd-input-section-13" class="wmd-input-section">###Non-Production Cost
+There are many non-production costs to be considered, first of which is the website. The website Kassette.me is being hosted on Github pages. Github pages allow us a permanent static website hosting page for free. However, hosting only static content is a limitation, and while we were able to bypass the sending an email for the contact us part by using MailGun, we will most likely need to move to our own host that allows for a backend in-order to store emails for the beta. This likely cost around \$30/year if we use a premium content host.
+
+Next recurring charge is the domain name. The current domain name Kassette.me costs us nothing to us because we used namecheap to get a domain name which is free for the first year to students. The domain name we want, Kassette.io, will cost around \$36 a year which we will need to buy as soon as possible. 
+
+Another possible cost to consider in the near future is the cost of a Spotify premium developer API. If our app becomes popular, we may need to have Spotify authorize to use an enterprise level API which allows us  to make more API calls. This is an unknown charge and won't likely be a problem so we will not consider this in our estimate.
+
+| Name | Cost |
+|:-|-:|
+|Domain Name| \$30 | 
+|Domain Hosting| \$36 |
+| **Grand Total** | $66
+
+
+--- 
+</span><span id="wmd-input-section-14" class="wmd-input-section">###Distribution
+
+The app is going to be distributed on the Google PlayStore starting this April. However, we currently are trying to recruit a fellow iOS developer to let us know the feasibility of releasing a similar app on iOS. The iOS platform imposes a lot of restrictions on what you can access and our initial research did not turn up any results. We are however hopeful that it will be possible to port the application onto iOS.
+
+
+--- 
+</span><span id="wmd-input-section-15" class="wmd-input-section">### Business Name / Branding
+The app started out with the name RoadTrip but as realized that the use case of the app was not limited to we decided to rebrand it. We sought advice from a close friend who is a professional designed and he recommended rebranding the whole app as Kassette. We have changed the icons, acquired the correct domain name and changed all pertinent information about our app to say Kassette. 
+
+--- 
+</span><span id="wmd-input-section-16" class="wmd-input-section">### Advertising budget &amp; schedule
+Our advertising strategy is very simple. We plan on using any capital we gain in any funding rounds into marketing. We do not plan on taking a salary, so any funding that comes in will be poured into advertising. We plan on spending 80% of any capital that we have on facebook ads. This strategy is very similar to that of a popular mobile app called Clash of Clans. They have had a lot of success with mobile facebook advertisements. Any remaining capital we intent to spend on Google AdWords.This has the advantage of being targeted to not only mobile users, but also on google search results and will allow us to bring in more users via the "shared music" organic search term. 
+
+--- 
+</span><span id="wmd-input-section-17" class="wmd-input-section">### Summary
+In summary, We hope Kassette is a unique app, with nothing like it on the google PlayStore. The novelty of the app is that it is able to stream songs using WiFi direct, something that has never been done before. We believe a strong focus on mobile advertising will help bring the app to our young demographic and lead to our app being successful. We were very pessimistic with our revenue estimates and our app will most likely be a lot higher than reported above but the numbers above serve as a minimum base. Our rebranding from RoadTrip to Kassette should lead to a bigger target audience. 
+
+
+
+</span><span id="wmd-input-section-18" class="wmd-input-section">#Launch Plan
+
+---
+</span><span id="wmd-input-section-19" class="wmd-input-section">### Launch press release
+</span><span id="wmd-input-section-20" class="wmd-input-section">#### Check out our press release at http://kassette.me/press-release/Kassette.pdf
+
+---
+</span><span id="wmd-input-section-21" class="wmd-input-section">### Web landing page
+</span><span id="wmd-input-section-22" class="wmd-input-section">#### http://kassette.me/
+
+![Kassette](http://s11.postimg.org/3pnxx1q3m/Screen_Shot_2015_03_21_at_6_11_14_PM.jpg)
+
+---
+</span><span id="wmd-input-section-23" class="wmd-input-section">### Social media blasts
+Dear Potential Users,
+
+I am writing to ask you to join me and other Kassette organization members to take control of your music. Have you ever had to deal with bad music at a social gathering, roadtrip, barbeque, or any other event? Most people probably answered yes to that if not than you're just very lucky or have friends with the exact same music taste as you. For everyone else there’s a solution to your problems. 
+
+Kassette can help. Kassette is an application which allows users to push their local songs saved on their phones to a host song. For example, if you and your friends are going on a road trip together and your friend is playing songs from his phone via bluetooth or auxiliary cable and he plays a song no one likes in the car and doesn’t want to change it you can set up a group in Kassette and everyone can downvote the song. Furthermore, everyone has control by using Kassette they all can push their local songs and even songs on Spotify to the host phone and down vote and up vote the songs. This essentially allows everyone to be happy at any social gathering or road trip. 
+
+We believe everyone should have control over their music so join us and other Kassette organization members and be part of the Kassette team. 
+
+Sincerly,
+Kassette 
+
+
+---
+</span><span id="wmd-input-section-24" class="wmd-input-section">### Advertising
+Full Page ad that we plan on posting on all social media and possibly on the UCSD Guardian
+
+![UCSD Guardian ad](http://s7.postimg.org/bw81dy8c9/Slide01.jpg)
+
+
+---
+</span><span id="wmd-input-section-25" class="wmd-input-section"># Functional description 
+
+The website was built using the bootstrap framework to build a responsive website. It is being hosted on Github so it can only use static HTML / CSS. This was a problem since we needed a contact page to be able to send us emails. So we used MailGun REST API which utilizes JSONP to send emails. 
+
+---
+</span><span id="wmd-input-section-26" class="wmd-input-section"># Help Guide
+Check out our website (http://kassette.me/) for a tutorial on how to use the app and a video description of how it works. 
+
+---
+</span><span id="wmd-input-section-27" class="wmd-input-section"># Project Goals
+When we first started Kassette we wanted to give as much control to the user as we possibly could over their song selection in a group environment. We wanted to get rid of one person controlling all the music or passing the auxiliary cord around and switching bluetooth for someone else to play their music. We accomplished our projects objectives however, we need to implement an iOS version of the application and have communication between iOS and android working. We want the app to be able to work between both iOS and android users so not everyone will need an android phone to use Kassette. To finish our future project objectives we will need a lot of time and funding so we can advertise the application.
+
+Every team member is happy with the work the other has done. Each individual has put in an incredible amount of effort to make Kassette a reality. We are all planning on continuing are work with Kassette and plan to go in business together. 
+
+
+
+---
+</span><span id="wmd-input-section-28" class="wmd-input-section"># Team
+</span><span id="wmd-input-section-29" class="wmd-input-section">#### **Mohammed Islam - Project Manger**
+
+**Background:** Computer Science major focusing on Mobile Development. Worked previously on two Android projects, one is a navigational app for Rady Children's Hospital and the other is an smartphone app for a company called NetSapiens. For both projects my team tackled the project from an Agile point of view while using Behavior Driven Development as our main choice of testing. On both projects, I primarily focused on Front-end but also understood backend of Android.
+
+**Strength &amp; Weakness:** Typically I am pretty bad at communicating when it comes to email or text because I often am not able to express what I want to say very smoothly or quickly, but I make up for this in my ability to explain complex ideas simply. Another thing is I am a bit slow or very confused when a problem arises, but I make up for this by really taking my time in understanding a problem especially when it comes to understanding a clients problems.
+Aside from that, I have been know to be easy to work with and I have been told that my work ethic inspires others to work harder.
+
+**Position:** Project Manager, because I have the most experience with Android on my team and will be able to effectively implement an Agile Development process. 
+ 
+
+</span><span id="wmd-input-section-30" class="wmd-input-section">#### **Saurabh Sharma - Server Side Developer**
+
+**Background:** A fourth year Computer Science Major emphasizing in Graphics. He has worked on both front end and backend web development positions in the industry. I have a passion for writing clean, maintainable code through use of OO techniques and applying design patterns. I am self taught in several web related languages and frameworks with past work experience in web development and several independent projects.
+
+
+**Strengths &amp; Weaknesses: ** I am vital to the group for my extensive API development experience which will be needed for the server backend of the application. I have worked on several Web applications and has several projects that consist of communicating between Android and Application APIs.
+
+**Position:** Server Side Developer because I am already really experienced in creating backend services for mobile apps, having previously done one during a hackathon.
+
+**Mir Ali Talpur - Android Backend Developer** 
+
+**Background:** I am currently a senior majoring in Computer Science emphasizing on Networking and Security. I have strong experience in frontend and backend web development but I have only worked on one android application in a team of five individuals. My internships have taught me how to work with teams and organize my work and time. 
+
+**Strengths &amp; Weaknesses:** I have strong backend, networking experience and am great at communicating with the team. Furthermore, I am highly motivated to make mobile applications. I have recently been doing a lot of C++ and haven't worked with Java in a while and I am not that creative.
+
+**Position:** Backend Developer because I enjoy backend development and have previous experience in projects as a backend developer. 
+
+---
+</span><span id="wmd-input-section-31" class="wmd-input-section"># Bibliography
+(1) http://www.technologyreview.com/news/524621/sell-your-personal-data-for-8-a-month/ 
+
+(2) http://cars.lovetoknow.com/about-cars/how-many-miles-do-americans-drive-per-year
+
+(3) https://play.google.com/store/apps/details?id=com.stylejukebox&amp;hl=en
+
+(4) https://play.google.com/store/apps/details?id=com.qualcomm.qce.allplay.jukebox&amp;hl=en
+
+(5) http://www.forbes.com/sites/tristanlouis/2013/08/10/how-much-do-average-apps-make/ 
+</span><span class="token lf">
+</span></div><div class="editor-margin" style="width: 510px;"></div></pre>
+			<div class="preview-panel" style="width: 1920px; height: 984px;">
+				<div class="preview-container" style="width: 1920px; height: 984px;">
+					<div id="preview-contents" style="padding-left: 510px; padding-right: 510px; padding-bottom: 924px;">
+						<div id="wmd-preview" class="preview-content"></div>
+					<div id="wmd-preview-section-1" class="wmd-preview-section preview-content">
+
+<p><img src="./Plan_files/Screen_Shot_2015_03_21_at_10_27_09_PM.jpg" alt="Kassette" title=""></p>
+
+</div><div id="wmd-preview-section-2" class="wmd-preview-section preview-content">
+
+<h1 id="index">Index</h1>
+<div class="table-of-contents" style="max-height: 902px;"><div class="toc">
+<ul>
+<li><a href="#index">Index</a></li>
+<li><a href="#marketing-plan">Marketing Plan</a><ul>
+<li><ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#mission-statement">Mission Statement</a></li>
+<li><a href="#demographics">Demographics</a></li>
+<li><a href="#market-research">Market Research</a><ul>
+<li><a href="#competition">Competition</a></li>
+<li><a href="#market-info">Market Info</a></li>
+</ul>
+</li>
+<li><a href="#pricing-business-pricing-strategies">Pricing / Business Pricing Strategies</a><ul>
+<li><a href="#revenue-table">Revenue Table</a></li>
+</ul>
+</li>
+<li><a href="#production-cost">Production Cost</a></li>
+<li><a href="#non-production-cost">Non-Production Cost</a></li>
+<li><a href="#distribution">Distribution</a></li>
+<li><a href="#business-name-branding">Business Name / Branding</a></li>
+<li><a href="#advertising-budget-schedule">Advertising budget &amp; schedule</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#launch-plan">Launch Plan</a><ul>
+<li><ul>
+<li><a href="#launch-press-release">Launch press release</a><ul>
+<li><a href="#check-out-our-press-release-at-httpkassettemepress-releasekassettepdf">Check out our press release at http://kassette.me/press-release/Kassette.pdf</a></li>
+</ul>
+</li>
+<li><a href="#web-landing-page">Web landing page</a><ul>
+<li><a href="#httpkassetteme">http://kassette.me/</a></li>
+</ul>
+</li>
+<li><a href="#social-media-blasts">Social media blasts</a></li>
+<li><a href="#advertising">Advertising</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#functional-description">Functional description</a></li>
+<li><a href="#help-guide">Help Guide</a></li>
+<li><a href="#project-goals">Project Goals</a></li>
+<li><a href="#team">Team</a><ul>
+<li><ul>
+<li><ul>
+<li><a href="#mohammed-islam-project-manger">Mohammed Islam - Project Manger</a></li>
+<li><a href="#saurabh-sharma-server-side-developer">Saurabh Sharma - Server Side Developer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#bibliography">Bibliography</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div><div id="wmd-preview-section-3" class="wmd-preview-section preview-content">
+
+<h1 id="marketing-plan">Marketing Plan</h1>
+
+<hr>
+
+</div><div id="wmd-preview-section-4" class="wmd-preview-section preview-content">
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Road trips with friends are pretty much synonymous with loud music and singing along. But theres just one problem, you realize your friends have terrible taste in music and you want to play your music instead. Problem is you can only connect one device at a time to play music, whether it be via auxiliary cord or bluetooth. Yes, you can disconnect the auxiliary cord and pass it around, but theres no guarantees it will reach you in the back seat and setting up bluetooth can only be done when the car is parked.</p>
+
+<p>Solution, Kassette is an Android App that allows you to push your music directly to the phone that is connected to the car so you don’t have to go through the hassle of passing the auxiliary cord or setting up bluetooth. Essentially this is done by having the phone connected to the car to set up a “Trip,” then you and everyone else in the car can push songs you want to listen to next, like a shared playlist. In addition, users also have the ability to down vote the current song being played. If a majority vote is reached, then the song is skipped. Lastly, Kassette  can also be used at party’s or small get togethers among friends and can enhance any social gatherings.</p>
+
+<hr>
+
+</div><div id="wmd-preview-section-5" class="wmd-preview-section preview-content">
+
+<h3 id="mission-statement">Mission Statement</h3>
+
+<p>Kassette - Your DJ companion. <br>
+Kassette aims to simply sharing songs and allowing multiple people to DJ rather than go through the trouble of listening to only one person’s music. Our goal is to make social environments more enjoyable by allowing people to listen to songs they want. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-6" class="wmd-preview-section preview-content">
+
+<h3 id="demographics">Demographics</h3>
+
+<p>We want to target students both males and females from the ages 16 to 25 in the US. More specifically these students have social lives, but very little money. So typically their social lives involves doing things that cost little to nothing, meaning hangout at someones house/dorm or just driving around/road trips. By focusing on students in this age range means that they are typically more tech savvy and willing to try a free app and are integrated into some type of social network like Facebook, Twitter, etc. So if they love an app, they are more willing to post it or share it on their social networks.</p>
+
+<hr>
+
+</div><div id="wmd-preview-section-7" class="wmd-preview-section preview-content">
+
+<h3 id="market-research">Market Research</h3>
+
+</div><div id="wmd-preview-section-8" class="wmd-preview-section preview-content">
+
+<h4 id="competition">Competition</h4>
+
+<p><strong>Top 10 Competitors:</strong></p>
+
+<ol>
+<li>Spotify</li>
+<li>Beats Music</li>
+<li>Google Play Music</li>
+<li>JukeBox for Spotify</li>
+<li>Jukebox </li>
+<li>Songza</li>
+<li>Pandora</li>
+<li>RockBot</li>
+<li>TouchTunes</li>
+<li>Rhapsody</li>
+</ol>
+
+<p><strong>Competition Analysis:</strong></p>
+
+<p>Our top five competitors can be broken into two groups, direct and indirect: </p>
+
+<p>Our indirect competitors would be music streaming apps that can copy our concept, which include Spotify, Beats Music, and Google Play Music. Now, in terms of Spotify and Google Play Music, if you don’t have the monthly paid subscription for either then you are not able to use the service (Google Play Music) on a mobile device or are subjected to a random selection of songs that is out of your control (Spotify). With Beats Music there is no monthly subscription, but you are limited in your music selection.</p>
+
+<p>Our direct competitors are apps that have similar concepts like JukeBox and JukeBox for Spotify, but each have limitations. With JukeBox you are limited to the songs that the “jukebox” phone has, meaning you cannot push songs that are on your phone or any other phone. JukeBox for Spotify requires GPS and you are not able to use it in a car, meaning you have to be stationary. On top of that, both of them crash frequently. </p>
+
+<p>With Kassette we will strive to provide a subscription free app that does not require any internet access. Users will be able to push the saved songs on their phones to create dynamic playlists while traveling. We also plan to implement a voting feature that allows users to be able to either up-vote a song to move up in the list or down-vote to move a song down. If the currently played song gets a majority number of down votes, it will be skipped.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Spotify</th>
+  <th align="center">Google PlayMusic</th>
+  <th align="center">Beats Music</th>
+  <th align="center">Jukebox for Spotify</th>
+  <th align="center">Jukebox</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><img src="./Plan_files/App_Spotify_icon.png" alt="Spotify" title=""></td>
+  <td align="center"><img src="./Plan_files/app_google_music.png" alt="Google PlayStore" title=""></td>
+  <td align="center"><img src="./Plan_files/Beats_Electronics_Logo.jpg" alt="Beats Music" title=""></td>
+  <td align="center"><img src="./Plan_files/icon175x175.png" alt="Jukebox for Spotify" title=""></td>
+  <td align="center"><img src="./Plan_files/jukebox.png" alt="Jukebox" title=""></td>
+</tr>
+</tbody></table>
+
+
+<p><img src="./Plan_files/400231068-Capture 2.PNG" alt="Capture 2.PNG" title=""></p>
+
+<p><img src="./Plan_files/225904447-Capture 3.PNG" alt="Capture 3.PNG" title=""></p>
+
+</div><div id="wmd-preview-section-9" class="wmd-preview-section preview-content">
+
+<h4 id="market-info">Market Info</h4>
+
+<p>Our minimum target API os Jelly Bean due to the fact that our app uses WiFi direct. WiFi direct technology requires a chip that was not included in phones below Android 4.1. However, this won’t pose a problem as research indicates that over 80% of the android Market consists of android version Jelly bean or higher. This is over 774 million devices Android devices.</p>
+
+<p><img src="./Plan_files/Screen_Shot_2015_03_21_at_6_03_53_PM.jpg" alt="Market Size" title=""></p>
+
+<hr>
+
+</div><div id="wmd-preview-section-10" class="wmd-preview-section preview-content">
+
+<h3 id="pricing-business-pricing-strategies">Pricing / Business Pricing Strategies</h3>
+
+<p>To monetize our app, we plan to use two approaches. First, we plan on releasing the app as a free version on the Google Play Store. This app will contain advertising to generate revenue, and gather the user’s location data which will later be sold (more on this later). Then, there is going to be an alternate “PRO” version of the app which will contain absolutely no advertising but will still collect location data. In addition, the “PRO” version of the app will range from <span>$</span>0.99 - <span>$</span>1.99 on the Google Play Store. We plan on selling the “PRO” version at an initial cost of $1.99 and then gauge if reducing the app price would drive sales.</p>
+
+<p>Besides generating revenue from advertising and selling it on the Play Store the app will also passively collect background location information. This user data is valuable to a lot of online marketplaces such as Data Exchange, InfoChimp and AggData, HandShake, DataCoup. These online data warehousing companies broker deals with companies to buy user data. HandShake offers a pricing model of a flat $8 fee per month but this requires credit card information from the user. Since there is no way to acquire a figure on how much location data is worth to companies, we estimate that companies are willing to pay at least a hundredth of what they are willing to pay for a user’s personal location. </p>
+
+<p>We use this modest projection of <span>$</span>0.08 per KB of data to estimate revenue generated annually. On average Americans drive 15,291 miles per year. This is around 244 hours spent on driving annually. We use an estimate that on average users only spend only around a fraction of this time on a road trip, around eight hours. Eight hours of collection location data can generate up to 1.5KB of bankable data. Now, we project having at least 15,000 downloads on our apps as apps similar to this idea like “Jukebox” and “Jukebox for Spotify” have similar install rates. Assuming only 10,000 people use the app actively every year for 8 hours, generating 10KB of data annually and that we can broker a deal to sell this data at <span>$</span>0.08, our revenue from location data alone will amount to $8,000 per year.</p>
+
+<p>Additionally our app will also be sold on the app store. We estimate that only around 2% of the users will buy the app. This will account for <span>$</span>200 in sales and after the google fee, we will make around  <span>$</span>140 on the app annually. On the free app side, We use the figures from Forbes of <span>$</span>0.18 generated from ads and for 98% of our remaining user base of 10,000 active users, we estimate that we will make around <span>$</span>1800. In total, we project our first year revenue of $9,940.</p>
+
+</div><div id="wmd-preview-section-11" class="wmd-preview-section preview-content">
+
+<h4 id="revenue-table"><strong>Revenue Table</strong></h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Year</th>
+  <th align="right">Downloads</th>
+  <th align="right">Revenue</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">1</td>
+  <td align="right">15,000</td>
+  <td align="right"><span>$</span>10,000</td>
+</tr>
+<tr>
+  <td align="center">2</td>
+  <td align="right">25,000</td>
+  <td align="right"><span>$</span>18,000</td>
+</tr>
+<tr>
+  <td align="center">3</td>
+  <td align="right">40,000</td>
+  <td align="right"><span>$</span>29,000</td>
+</tr>
+<tr>
+  <td align="center">4</td>
+  <td align="right">60,000</td>
+  <td align="right"><span>$</span>42,000</td>
+</tr>
+</tbody></table>
+
+
+<hr>
+
+</div><div id="wmd-preview-section-12" class="wmd-preview-section preview-content">
+
+<h3 id="production-cost">Production Cost</h3>
+
+<p>Kassette was developed by a three member team. Doing an analysis of the commits per week, and the amount of code pushed by the team members, we estimated that we worked on Kassette at least 33 hours per week (11 hours per team member). An additional 15 hours were added for research for the following reasons. Our  team project manager, Mohammed Islam, spent a consider amount of time looking into WiFi-Direct technology and using it on Android. Mohammed had previous android experience and was able to get up and running developing the app a lot faster than the other two team members, Saurabh and Ali. Saurabh and Ali spent a lot of time researching into fragments, and learning the Android API. So with this we tally a total of  hours per week that we worked on the app. Development of the app by Mohammed started earlier in week 5, where as development by Saurabh and did not start until Week 6. Therefore, a grand total of 178 hours were put into the development of the code base.  <br>
+In addition to the hours above, we also spent time preparing for mock up presentations and creating this bussiness plan. We add a total of low estimate of  10 hours to that as the planning, brainstorming session, and presentation preps for Kassette were long.  <br>
+In order to calculate the time of value of each member, we used the amount they will be paid this summer for their internships and full-time work. For Mohammed Islam, he will be receiving <span>$</span>37 an hour at SalesForce, Saurabh Sharma will be receiving <span>$</span>54/hour for full-time work at Microsoft, and Ali Talpur will be receiving <span>$</span>35/ hour at Sony Playstation.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Type</th>
+  <th align="center">Saurabh Sharma</th>
+  <th align="center">Mohammed Islam</th>
+  <th align="center">Ali Talpur</th>
+  <th align="center">X</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><strong>Dev Time</strong></td>
+  <td align="center">44 (11 hours / 4 weeks)</td>
+  <td align="center">55 (11 hours / 5 weeks)</td>
+  <td align="center">44 (11 hours / 4 weeks)</td>
+  <td align="center">x</td>
+</tr>
+<tr>
+  <td align="center"><strong>Research Hours</strong></td>
+  <td align="center">15</td>
+  <td align="center">20</td>
+  <td align="center">10</td>
+  <td align="center">x</td>
+</tr>
+<tr>
+  <td align="center"><strong>Total Hours</strong></td>
+  <td align="center">59</td>
+  <td align="center">75</td>
+  <td align="center">44</td>
+  <td align="center">x</td>
+</tr>
+<tr>
+  <td align="center"><strong>Rate / Dev</strong></td>
+  <td align="center"><span>$</span>54</td>
+  <td align="center"><span>$</span>37</td>
+  <td align="center"><span>$</span>35</td>
+  <td align="center">x</td>
+</tr>
+<tr>
+  <td align="center"><strong>Member Salaries</strong></td>
+  <td align="center"><span>$</span>3,186</td>
+  <td align="center"><span>$</span>2,775</td>
+  <td align="center"><span>$</span>1,890</td>
+  <td align="center">x</td>
+</tr>
+<tr>
+  <td align="center">x</td>
+  <td align="center">x</td>
+  <td align="center">x</td>
+  <td align="center"><strong>Grand Total</strong></td>
+  <td align="center"><span>$</span>7,851</td>
+</tr>
+</tbody></table>
+
+
+<hr>
+
+</div><div id="wmd-preview-section-13" class="wmd-preview-section preview-content">
+
+<h3 id="non-production-cost">Non-Production Cost</h3>
+
+<p>There are many non-production costs to be considered, first of which is the website. The website Kassette.me is being hosted on Github pages. Github pages allow us a permanent static website hosting page for free. However, hosting only static content is a limitation, and while we were able to bypass the sending an email for the contact us part by using MailGun, we will most likely need to move to our own host that allows for a backend in-order to store emails for the beta. This likely cost around <span>$</span>30/year if we use a premium content host.</p>
+
+<p>Next recurring charge is the domain name. The current domain name Kassette.me costs us nothing to us because we used namecheap to get a domain name which is free for the first year to students. The domain name we want, Kassette.io, will cost around <span>$</span>36 a year which we will need to buy as soon as possible. </p>
+
+<p>Another possible cost to consider in the near future is the cost of a Spotify premium developer API. If our app becomes popular, we may need to have Spotify authorize to use an enterprise level API which allows us  to make more API calls. This is an unknown charge and won’t likely be a problem so we will not consider this in our estimate.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="right">Cost</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Domain Name</td>
+  <td align="right"><span>$</span>30</td>
+</tr>
+<tr>
+  <td align="left">Domain Hosting</td>
+  <td align="right"><span>$</span>36</td>
+</tr>
+<tr>
+  <td align="left"><strong>Grand Total</strong></td>
+  <td align="right">$66</td>
+</tr>
+</tbody></table>
+
+
+<hr>
+
+</div><div id="wmd-preview-section-14" class="wmd-preview-section preview-content">
+
+<h3 id="distribution">Distribution</h3>
+
+<p>The app is going to be distributed on the Google PlayStore starting this April. However, we currently are trying to recruit a fellow iOS developer to let us know the feasibility of releasing a similar app on iOS. The iOS platform imposes a lot of restrictions on what you can access and our initial research did not turn up any results. We are however hopeful that it will be possible to port the application onto iOS.</p>
+
+<hr>
+
+</div><div id="wmd-preview-section-15" class="wmd-preview-section preview-content">
+
+<h3 id="business-name-branding">Business Name / Branding</h3>
+
+<p>The app started out with the name RoadTrip but as realized that the use case of the app was not limited to we decided to rebrand it. We sought advice from a close friend who is a professional designed and he recommended rebranding the whole app as Kassette. We have changed the icons, acquired the correct domain name and changed all pertinent information about our app to say Kassette. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-16" class="wmd-preview-section preview-content">
+
+<h3 id="advertising-budget-schedule">Advertising budget &amp; schedule</h3>
+
+<p>Our advertising strategy is very simple. We plan on using any capital we gain in any funding rounds into marketing. We do not plan on taking a salary, so any funding that comes in will be poured into advertising. We plan on spending 80% of any capital that we have on facebook ads. This strategy is very similar to that of a popular mobile app called Clash of Clans. They have had a lot of success with mobile facebook advertisements. Any remaining capital we intent to spend on Google AdWords.This has the advantage of being targeted to not only mobile users, but also on google search results and will allow us to bring in more users via the “shared music” organic search term. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-17" class="wmd-preview-section preview-content">
+
+<h3 id="summary">Summary</h3>
+
+<p>In summary, We hope Kassette is a unique app, with nothing like it on the google PlayStore. The novelty of the app is that it is able to stream songs using WiFi direct, something that has never been done before. We believe a strong focus on mobile advertising will help bring the app to our young demographic and lead to our app being successful. We were very pessimistic with our revenue estimates and our app will most likely be a lot higher than reported above but the numbers above serve as a minimum base. Our rebranding from RoadTrip to Kassette should lead to a bigger target audience. </p>
+
+</div><div id="wmd-preview-section-18" class="wmd-preview-section preview-content">
+
+<h1 id="launch-plan">Launch Plan</h1>
+
+<hr>
+
+</div><div id="wmd-preview-section-19" class="wmd-preview-section preview-content">
+
+<h3 id="launch-press-release">Launch press release</h3>
+
+</div><div id="wmd-preview-section-20" class="wmd-preview-section preview-content">
+
+<h4 id="check-out-our-press-release-at-httpkassettemepress-releasekassettepdf">Check out our press release at <a href="http://kassette.me/press-release/Kassette.pdf">http://kassette.me/press-release/Kassette.pdf</a></h4>
+
+<hr>
+
+</div><div id="wmd-preview-section-21" class="wmd-preview-section preview-content">
+
+<h3 id="web-landing-page">Web landing page</h3>
+
+</div><div id="wmd-preview-section-22" class="wmd-preview-section preview-content">
+
+<h4 id="httpkassetteme"><a href="http://kassette.me/">http://kassette.me/</a></h4>
+
+<p><img src="./Plan_files/Screen_Shot_2015_03_21_at_6_11_14_PM.jpg" alt="Kassette" title=""></p>
+
+<hr>
+
+</div><div id="wmd-preview-section-23" class="wmd-preview-section preview-content">
+
+<h3 id="social-media-blasts">Social media blasts</h3>
+
+<p>Dear Potential Users,</p>
+
+<p>I am writing to ask you to join me and other Kassette organization members to take control of your music. Have you ever had to deal with bad music at a social gathering, roadtrip, barbeque, or any other event? Most people probably answered yes to that if not than you’re just very lucky or have friends with the exact same music taste as you. For everyone else there’s a solution to your problems. </p>
+
+<p>Kassette can help. Kassette is an application which allows users to push their local songs saved on their phones to a host song. For example, if you and your friends are going on a road trip together and your friend is playing songs from his phone via bluetooth or auxiliary cable and he plays a song no one likes in the car and doesn’t want to change it you can set up a group in Kassette and everyone can downvote the song. Furthermore, everyone has control by using Kassette they all can push their local songs and even songs on Spotify to the host phone and down vote and up vote the songs. This essentially allows everyone to be happy at any social gathering or road trip. </p>
+
+<p>We believe everyone should have control over their music so join us and other Kassette organization members and be part of the Kassette team. </p>
+
+<p>Sincerly, <br>
+Kassette </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-24" class="wmd-preview-section preview-content">
+
+<h3 id="advertising">Advertising</h3>
+
+<p>Full Page ad that we plan on posting on all social media and possibly on the UCSD Guardian</p>
+
+<p><img src="./Plan_files/Slide01.jpg" alt="UCSD Guardian ad" title=""></p>
+
+<hr>
+
+</div><div id="wmd-preview-section-25" class="wmd-preview-section preview-content">
+
+<h1 id="functional-description">Functional description</h1>
+
+<p>The website was built using the bootstrap framework to build a responsive website. It is being hosted on Github so it can only use static HTML / CSS. This was a problem since we needed a contact page to be able to send us emails. So we used MailGun REST API which utilizes JSONP to send emails. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-26" class="wmd-preview-section preview-content">
+
+<h1 id="help-guide">Help Guide</h1>
+
+<p>Check out our website (<a href="http://kassette.me/">http://kassette.me/</a>) for a tutorial on how to use the app and a video description of how it works. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-27" class="wmd-preview-section preview-content">
+
+<h1 id="project-goals">Project Goals</h1>
+
+<p>When we first started Kassette we wanted to give as much control to the user as we possibly could over their song selection in a group environment. We wanted to get rid of one person controlling all the music or passing the auxiliary cord around and switching bluetooth for someone else to play their music. We accomplished our projects objectives however, we need to implement an iOS version of the application and have communication between iOS and android working. We want the app to be able to work between both iOS and android users so not everyone will need an android phone to use Kassette. To finish our future project objectives we will need a lot of time and funding so we can advertise the application.</p>
+
+<p>Every team member is happy with the work the other has done. Each individual has put in an incredible amount of effort to make Kassette a reality. We are all planning on continuing are work with Kassette and plan to go in business together. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-28" class="wmd-preview-section preview-content">
+
+<h1 id="team">Team</h1>
+
+</div><div id="wmd-preview-section-29" class="wmd-preview-section preview-content">
+
+<h4 id="mohammed-islam-project-manger"><strong>Mohammed Islam - Project Manger</strong></h4>
+
+<p><strong>Background:</strong> Computer Science major focusing on Mobile Development. Worked previously on two Android projects, one is a navigational app for Rady Children’s Hospital and the other is an smartphone app for a company called NetSapiens. For both projects my team tackled the project from an Agile point of view while using Behavior Driven Development as our main choice of testing. On both projects, I primarily focused on Front-end but also understood backend of Android.</p>
+
+<p><strong>Strength &amp; Weakness:</strong> Typically I am pretty bad at communicating when it comes to email or text because I often am not able to express what I want to say very smoothly or quickly, but I make up for this in my ability to explain complex ideas simply. Another thing is I am a bit slow or very confused when a problem arises, but I make up for this by really taking my time in understanding a problem especially when it comes to understanding a clients problems. <br>
+Aside from that, I have been know to be easy to work with and I have been told that my work ethic inspires others to work harder.</p>
+
+<p><strong>Position:</strong> Project Manager, because I have the most experience with Android on my team and will be able to effectively implement an Agile Development process. </p>
+
+</div><div id="wmd-preview-section-30" class="wmd-preview-section preview-content">
+
+<h4 id="saurabh-sharma-server-side-developer"><strong>Saurabh Sharma - Server Side Developer</strong></h4>
+
+<p><strong>Background:</strong> A fourth year Computer Science Major emphasizing in Graphics. He has worked on both front end and backend web development positions in the industry. I have a passion for writing clean, maintainable code through use of OO techniques and applying design patterns. I am self taught in several web related languages and frameworks with past work experience in web development and several independent projects.</p>
+
+<p><strong>Strengths &amp; Weaknesses: </strong> I am vital to the group for my extensive API development experience which will be needed for the server backend of the application. I have worked on several Web applications and has several projects that consist of communicating between Android and Application APIs.</p>
+
+<p><strong>Position:</strong> Server Side Developer because I am already really experienced in creating backend services for mobile apps, having previously done one during a hackathon.</p>
+
+<p><strong>Mir Ali Talpur - Android Backend Developer</strong> </p>
+
+<p><strong>Background:</strong> I am currently a senior majoring in Computer Science emphasizing on Networking and Security. I have strong experience in frontend and backend web development but I have only worked on one android application in a team of five individuals. My internships have taught me how to work with teams and organize my work and time. </p>
+
+<p><strong>Strengths &amp; Weaknesses:</strong> I have strong backend, networking experience and am great at communicating with the team. Furthermore, I am highly motivated to make mobile applications. I have recently been doing a lot of C++ and haven’t worked with Java in a while and I am not that creative.</p>
+
+<p><strong>Position:</strong> Backend Developer because I enjoy backend development and have previous experience in projects as a backend developer. </p>
+
+<hr>
+
+</div><div id="wmd-preview-section-31" class="wmd-preview-section preview-content">
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>(1) <a href="http://www.technologyreview.com/news/524621/sell-your-personal-data-for-8-a-month/">http://www.technologyreview.com/news/524621/sell-your-personal-data-for-8-a-month/</a> </p>
+
+<p>(2) <a href="http://cars.lovetoknow.com/about-cars/how-many-miles-do-americans-drive-per-year">http://cars.lovetoknow.com/about-cars/how-many-miles-do-americans-drive-per-year</a></p>
+
+<p>(3) <a href="https://play.google.com/store/apps/details?id=com.stylejukebox&hl=en">https://play.google.com/store/apps/details?id=com.stylejukebox&amp;hl=en</a></p>
+
+<p>(4) <a href="https://play.google.com/store/apps/details?id=com.qualcomm.qce.allplay.jukebox&hl=en">https://play.google.com/store/apps/details?id=com.qualcomm.qce.allplay.jukebox&amp;hl=en</a></p>
+
+<p>(5) <a href="http://www.forbes.com/sites/tristanlouis/2013/08/10/how-much-do-average-apps-make/">http://www.forbes.com/sites/tristanlouis/2013/08/10/how-much-do-average-apps-make/</a> </p></div><div id="wmd-preview-section-footnotes" class="preview-content"></div></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="wmd-button-bar" class="hide"><ul id="wmd-button-row" class="wmd-button-row"><li class="wmd-button btn btn-success" id="wmd-bold-button" title="Strong &lt;strong&gt; Ctrl/Cmd+B" style="left: 0px;"><span style="display: none; background-position: 0px 0px;"></span><i class="icon-bold"></i></li><li class="wmd-button btn btn-success" id="wmd-italic-button" title="Emphasis &lt;em&gt; Ctrl/Cmd+I" style="left: 0px;"><span style="display: none; background-position: -20px 0px;"></span><i class="icon-italic"></i></li><li class="wmd-spacer wmd-spacer1 btn btn-success" id="wmd-spacer1" style="left: 0px;"></li><li class="wmd-button btn btn-success" id="wmd-link-button" title="Hyperlink &lt;a&gt; Ctrl/Cmd+L" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-globe"></i></li><li class="wmd-button btn btn-success" id="wmd-quote-button" title="Blockquote &lt;blockquote&gt; Ctrl/Cmd+Q" style="left: 0px;"><span style="display: none; background-position: -60px 0px;"></span><i class="icon-indent-right"></i></li><li class="wmd-button btn btn-success" id="wmd-code-button" title="Code Sample &lt;pre&gt;&lt;code&gt; Ctrl/Cmd+K" style="left: 0px;"><span style="display: none; background-position: -80px 0px;"></span><i class="icon-code"></i></li><li class="wmd-button btn btn-success" id="wmd-image-button" title="Image &lt;img&gt; Ctrl/Cmd+G" style="left: 0px;"><span style="display: none; background-position: -100px 0px;"></span><i class="icon-picture"></i></li><li class="wmd-spacer wmd-spacer2 btn btn-success" id="wmd-spacer2" style="left: 0px;"></li><li class="wmd-button btn btn-success" id="wmd-olist-button" title="Numbered List &lt;ol&gt; Ctrl/Cmd+O" style="left: 0px;"><span style="display: none; background-position: -120px 0px;"></span><i class="icon-list-numbered"></i></li><li class="wmd-button btn btn-success" id="wmd-ulist-button" title="Bulleted List &lt;ul&gt; Ctrl/Cmd+U" style="left: 0px;"><span style="display: none; background-position: -140px 0px;"></span><i class="icon-list-bullet"></i></li><li class="wmd-button btn btn-success" id="wmd-heading-button" title="Heading &lt;h1&gt;/&lt;h2&gt; Ctrl/Cmd+H" style="left: 0px;"><span style="display: none; background-position: -160px 0px;"></span><i class="icon-text-height"></i></li><li class="wmd-button btn btn-success" id="wmd-hr-button" title="Horizontal Rule &lt;hr&gt; Ctrl/Cmd+R" style="left: 0px;"><span style="display: none; background-position: -180px 0px;"></span><i class="icon-ellipsis"></i></li><li class="wmd-spacer wmd-spacer3 btn btn-success" id="wmd-spacer3" style="left: 0px;"></li><li class="wmd-button disabled btn btn-success" id="wmd-undo-button" title="Undo - Ctrl/Cmd+Z" style="left: 0px;"><span style="display: none; background-position: -200px -20px;"></span><i class="icon-reply"></i></li><li class="wmd-button disabled btn btn-success" id="wmd-redo-button" title="Redo - Ctrl/Cmd+Y" style="left: 0px;"><span style="display: none; background-position: -220px -20px;"></span><i class="icon-forward"></i></li></ul></div>
+
+	<div class="menu-panel">
+		
+	</div>
+
+
+	
+</div>
+<div id="wmd-button-bar" class="hide"></div>
+
+<div class="modal modal-non-unique">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h3 class="modal-title">Ooops...</h3>
+			</div>
+			<div class="modal-footer">
+				<a href="javascript:window.location.reload();" class="btn btn-primary">Reload</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div><iframe style="width:1px;height:1px;position:absolute;top:-100px" src="./Plan_files/authorize.html"></iframe></body><input style="width:1px;height:1px;border:none;margin:0;padding:0;" tabindex="-1"></html>
