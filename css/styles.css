@@ -6163,6 +6163,10 @@ button.close {
     display: none !important;
   }
 }
+.max-kassette-gif {
+  max-height: 800px;
+  max-width: 800px;
+}
 .full-cover:hover,
 .full-cover:active {
   color: #0c89f1;
