@@ -1,10 +1,11 @@
 $(function() {
-  $("#myCarousel > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right").on('click') {
+  $("#myCarousel > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right").on('click', function() {
     $('#myCarousel').carousel('next');
-  }
-  $("#myCarousel > a.right.carousel-control > span.glyphicon.glyphicon-chevron-left").on('click') {
+  }); 
+  $("#myCarousel > a.right.carousel-control > span.glyphicon.glyphicon-chevron-left").on('click', function() {
     $('#myCarousel').carousel('prev');
-  }
+  }); 
+  
   $(kassette_logo).css('visibility','visible').hide().fadeIn(1500);
   // Smooth scrolling
   $('a[href*=#]:not([href=#])').click(function(item) {
