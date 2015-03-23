@@ -6163,6 +6163,26 @@ button.close {
     display: none !important;
   }
 }
+.carousel-overlay-text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0px;
+}
+.carousel-indicators {
+  bottom: 30px;
+}
+.carousel-indicators .active {
+  background-color: #0c89f1;
+}
+.carousel-indicators li {
+  box-shadow: 0px 1px 1px gray;
+  border: none;
+}
+.carousel-control {
+  background-image: none !important;
+}
 .tut-gif {
   max-width: 270px;
 }
