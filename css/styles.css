@@ -6163,6 +6163,10 @@ button.close {
     display: none !important;
   }
 }
+#myCarousel {
+  max-width: 300px;
+  margin: 0 auto;
+}
 .carousel-overlay-text {
   position: relative;
   width: 100%;
@@ -6179,6 +6183,9 @@ button.close {
 .carousel-indicators li {
   box-shadow: 0px 1px 1px gray;
   border: none;
+}
+.carousel-control:hover {
+  cursor: pointer;
 }
 .carousel-control {
   background-image: none !important;
