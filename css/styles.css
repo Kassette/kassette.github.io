@@ -6441,7 +6441,7 @@ h1 {
 @font-face {
   font-family: 'Swingdancer';
   font-style: normal;
-  src: url(../fonts/Swingdancer.ttf);
+  src: url(../fonts/Swingdancer.eot) format('eot'), url(../fonts/Swingdancer.woff) format('woff'), url(../fonts/Swingdancer.ttf) format('truetype');
 }
 @font-face {
   font-family: Quicksand-regular;
