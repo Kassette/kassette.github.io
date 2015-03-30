@@ -1,8 +1,8 @@
 $(function() {
-  $("#myCarousel > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right").on('click', function() {
+  $("#myCarousel > a.right.carousel-control").on('click', function() {
     $('#myCarousel').carousel('next');
   }); 
-  $("#myCarousel > a.right.carousel-control > span.glyphicon.glyphicon-chevron-left").on('click', function() {
+  $("#myCarousel > a.left.carousel-control").on('click', function() {
     $('#myCarousel').carousel('prev');
   }); 
   
